@@ -93,3 +93,11 @@ a {
     color: #6b7280;
     margin-bottom: 12px;
 }
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
