@@ -54,3 +54,12 @@ a {
     display: block;
     margin: 0 auto 20px auto;
 }
+
+/* Card style */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
