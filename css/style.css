@@ -228,8 +228,8 @@ footer a {
 }
 
 .mail-icon {
-    width: 26px;
-    height: 26px;
+    width: 52px;
+    height: 52px;
     fill: #6b7280; /* subtle grey */
     flex-shrink: 0;
 }
