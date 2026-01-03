@@ -218,18 +218,3 @@ footer a {
 .contact-card strong {
     font-weight: 600;
 }
-
-/* Email with icon */
-.contact-email {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.05em;
-}
-
-.mail-icon {
-    width: 52px;
-    height: 52px;
-    fill: #6b7280; /* subtle grey */
-    flex-shrink: 0;
-}
