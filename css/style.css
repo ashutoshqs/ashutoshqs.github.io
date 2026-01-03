@@ -209,3 +209,27 @@ footer a {
     font-size: 0.85em;
     color: #9ca3af;
 }
+
+/* Contact page */
+.contact-card p {
+    margin-bottom: 22px;
+}
+
+.contact-card strong {
+    font-weight: 600;
+}
+
+/* Email with icon */
+.contact-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.05em;
+}
+
+.mail-icon {
+    width: 26px;
+    height: 26px;
+    fill: #6b7280; /* subtle grey */
+    flex-shrink: 0;
+}
