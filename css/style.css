@@ -218,3 +218,31 @@ footer a {
 .contact-card strong {
     font-weight: 600;
 }
+
+/* Mail icon block */
+.mail-icon-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Icon itself */
+.mail-icon {
+    width: 56px;
+    height: 56px;
+    fill: #6b7280;              /* neutral grey */
+    transition: fill 0.25s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.mail-icon-container a:hover .mail-icon {
+    fill: #2563eb;              /* your site’s accent blue */
+}
+
+/* Caption */
+.mail-caption {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #4b5563;
+}
