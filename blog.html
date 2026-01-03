@@ -59,11 +59,16 @@
 
 <footer>
     <p>
-        © 2026 Ashutosh · Mathematics<br>
+        © <span id="year"></span> Ashutosh · Mathematics<br>
         Indian Institute of Technology Delhi<br>
         Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        <span class="last-updated">Last updated: January 2026</span>
     </p>
 </footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
     
 </body>
 
