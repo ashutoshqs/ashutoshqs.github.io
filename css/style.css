@@ -202,3 +202,10 @@ footer a {
 .education-list a {
     color: #2563eb;
 }
+
+.last-updated {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #9ca3af;
+}
