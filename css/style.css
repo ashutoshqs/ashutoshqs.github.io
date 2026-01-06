@@ -267,7 +267,7 @@ footer a {
 
 .site-title {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.6em;
     color: #111827;        /* same as text */
     text-decoration: none;
 }
@@ -372,7 +372,7 @@ footer a {
     }
 
     .nav-links.active {
-        max-height: 300px; /* large enough for all links */
+        max-height: 400px; /* large enough for all links */
         opacity: 1;
     }
 }
