@@ -104,9 +104,20 @@
     const links = document.querySelector(".nav-links");
 
     toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
         links.classList.toggle("active");
     });
 </script>
+
+<script>
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
     
 </body>
 
