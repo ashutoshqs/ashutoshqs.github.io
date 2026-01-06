@@ -256,12 +256,13 @@ footer a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 
 .nav-header {
     display: flex;
     align-items: center;
+    margin-top: -4px;
 }
 
 .site-title {
