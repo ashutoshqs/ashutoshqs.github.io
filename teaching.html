@@ -3,86 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Ashutosh</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Teaching | Ashutosh</title>
+
     <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+<nav class="navbar">
+    <div class="nav-header">
+        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="awards.html">Awards</a>
+        <a href="blog.html">Blog</a>
+    </div>
 </nav>
 
-<h1>Teaching</h1>
+<main class="page-content">
 
-<p class="section-intro">
-    Teaching roles and instructional experience in mathematics.
-</p>
+    <h1>Teaching</h1>
 
-<section class="card content">
-
-    <p>
-        I have been involved in teaching activities as a Teaching Assistant
-        for undergraduate mathematics courses.
-        My responsibilities have included conducting tutorial sessions,
-        assisting with problem-solving sessions, and providing academic
-        support to students.
+    <p class="section-intro">
+        Teaching roles and instructional experience in mathematics.
     </p>
 
-    <p>
-        Through these activities, I have gained experience in communicating
-        mathematical ideas clearly and rigorously, particularly in a classroom
-        and small-group setting.
-    </p>
+    <section class="card content">
 
-</section>
+        <p>
+            I have been involved in teaching activities as a Teaching Assistant
+            for undergraduate mathematics courses. My responsibilities have
+            included conducting tutorial sessions, assisting with
+            problem-solving sessions, and providing academic support to
+            students.
+        </p>
 
-<h2>Teaching Experience</h2>
+        <p>
+            Through these activities, I have gained experience in communicating
+            mathematical ideas clearly and rigorously, particularly in a
+            classroom and small-group setting.
+        </p>
 
-<ul class="teaching-list">
+    </section>
 
-    <li>
-        <strong>Fall 2025</strong><br>
-        <em>MTL1001: Calculus</em><br>
-        Teaching Assistant<br>
-        Course Coordinator and Instructor:
-        <a href="https://sites.google.com/site/biswajyotimathematics" target="_blank">
-            Prof. Biswajyoti Saha
-        </a>
-    </li>
+    <h2>Teaching Experience</h2>
 
-    <li>
-        <strong>Spring 2026</strong><br>
-        <em>MTL1002: Linear Algebra & Differential Equations</em><br>
-        Teaching Assistant<br>
-        Course Instructor:
-        <a href="https://sites.google.com/site/ekatamath" target="_blank">
-            Prof. Ekata Saha
-        </a>
-    </li>
+    <ul class="teaching-list">
 
-</ul>
+        <li>
+            <strong>Spring 2026</strong><br>
+            <em>MTL1002: Linear Algebra &amp; Differential Equations</em><br>
+            Teaching Assistant<br>
+            Course Instructor:
+            <a href="https://sites.google.com/site/ekatamath" target="_blank">
+                Prof. Ekata Saha
+            </a>
+        </li>
+
+        <li>
+            <strong>Fall 2025</strong><br>
+            <em>MTL1001: Calculus</em><br>
+            Teaching Assistant<br>
+            Course Coordinator and Instructor:
+            <a href="https://sites.google.com/site/biswajyotimathematics" target="_blank">
+                Prof. Biswajyoti Saha
+            </a>
+        </li>
+
+    </ul>
+
+</main>
 
 <footer>
     <p>
         © <span id="year"></span> Ashutosh · Mathematics<br>
         Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        Email:
+        <a href="mailto:mas247067@maths.iitd.ac.in">
+            mas247067@maths.iitd.ac.in
+        </a>
         <span class="last-updated">Last updated: January 2026</span>
     </p>
 </footer>
@@ -90,6 +110,23 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-    
+
+<script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
 </body>
 </html>
