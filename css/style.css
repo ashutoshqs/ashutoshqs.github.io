@@ -257,13 +257,13 @@ footer a {
 
 .nav-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 12px;
 }
 
 .site-title {
     font-weight: 600;
-    font-size: 2em;   /* increase this */
+    font-size: 1.5em;   /* increase this */
 }
 
 /* Nav links (desktop default) */
@@ -293,6 +293,7 @@ footer a {
         display: none;
         flex-direction: column;
         margin-top: 15px;
+        width: 100%;
     }
 
     .nav-links a {
