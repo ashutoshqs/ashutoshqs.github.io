@@ -249,22 +249,18 @@ footer a {
 
 /* Navigation base */
 .navbar {
-    display: flex;
-    justify-content: space-between; /* key line */
-    align-items: center;
-    width: 100%;
     margin-bottom: 30px;
 }
 
 .nav-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 12px;
 }
 
 .site-title {
     font-weight: 600;
-    font-size: 1.5em;   /* increase this */
+    font-size: 1.4em;   /* increase this */
 }
 
 /* Nav links (desktop default) */
@@ -291,18 +287,9 @@ footer a {
     }
 
     .nav-links {
-        display: flex;                 /* always flex */
+        display: none;
         flex-direction: column;
-        width: 100%;
         margin-top: 15px;
-
-        max-height: 0;                 /* collapsed */
-        overflow: hidden;
-        opacity: 0;
-
-        transition:
-            max-height 0.3s ease,
-            opacity 0.2s ease;
     }
 
     .nav-links a {
@@ -310,25 +297,12 @@ footer a {
     }
 
     .nav-links.active {
-        max-height: 300px;             /* enough for links */
-        opacity: 1;
+        display: flex;
     }
 }
 
 @media (max-width: 768px) {
     .site-title {
-        font-size: 1.5em;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .navbar {
-        padding-right: 10px;  /* small breathing room */
-    }
-
-    .nav-header {
-        width: 100%;
-        justify-content: space-between;
+        font-size: 1.35em;
     }
 }
