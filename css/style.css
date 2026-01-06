@@ -262,14 +262,17 @@ footer a {
 .nav-header {
     display: flex;
     align-items: center;
-    margin-top: -4px;
+    margin-top: 0;
 }
 
 .site-title {
     font-weight: 600;
-    font-size: 1.6em;
+    font-size: 1.7em;
     color: #111827;        /* same as text */
     text-decoration: none;
+    
+    position: relative;
+    top: -2px;
 }
 
 .site-title:hover {
