@@ -282,7 +282,7 @@ footer a {
 /* Nav links (desktop) */
 .nav-links {
     display: flex;
-    gap: 12px;
+    gap: 8px;
 }
 
 /* Hide hamburger on desktop */
