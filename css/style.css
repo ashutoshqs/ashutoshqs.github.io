@@ -256,7 +256,7 @@ footer a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding-top: 6px;
+    padding-top: 4px;
 }
 
 .nav-header {
