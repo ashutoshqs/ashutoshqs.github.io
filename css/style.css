@@ -300,3 +300,9 @@ footer a {
         display: flex;
     }
 }
+
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 1.35em;
+    }
+}
