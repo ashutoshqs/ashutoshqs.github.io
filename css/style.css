@@ -1,51 +1,150 @@
-/* Global layout */
+/* =========================
+   Global layout
+   ========================= */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 24px;
+    margin: 0;
+    padding: 0;
     line-height: 1.7;
     background-color: #f9fafb;
     color: #1f2933;
 }
 
-/* Navigation bar */
-nav {
-    margin-bottom: 50px;
+/* Page content wrapper (centers content, NOT nav) */
+.page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 24px;
+}
+
+
+/* =========================
+   Navigation bar
+   ========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+
+    margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid #e5e7eb;
 }
 
-nav a {
-    margin-right: 24px;
+.nav-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-title {
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+/* Nav links (desktop) */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
     text-decoration: none;
     color: #2563eb;
     font-weight: 500;
 }
 
-nav a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
-/* Headings */
+/* Hamburger button */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+
+/* =========================
+   Mobile navigation
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        display: flex;
+        flex-direction: column;
+        padding: 0 24px;
+
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+
+        background-color: #f9fafb;
+        border-bottom: 1px solid #e5e7eb;
+
+        transition:
+            max-height 0.35s ease,
+            opacity 0.25s ease;
+    }
+
+    .nav-links.active {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+    .nav-links a {
+        padding: 10px 0;
+    }
+}
+
+
+/* =========================
+   Headings & text
+   ========================= */
+
 h1 {
     font-size: 2.4em;
     margin-bottom: 12px;
     color: #111827;
 }
 
-/* Paragraphs */
+h2 {
+    margin-top: 30px;
+    font-size: 1.4em;
+}
+
 p {
     font-size: 1.05em;
     margin-bottom: 18px;
 }
 
-/* Links inside content */
 a {
     color: #2563eb;
 }
 
-/* Profile photo */
+
+/* =========================
+   Profile photo
+   ========================= */
+
 .profile-photo {
     width: 320px;
     height: 320px;
@@ -55,7 +154,11 @@ a {
     margin: 0 auto 20px auto;
 }
 
-/* Card style */
+
+/* =========================
+   Cards & sections
+   ========================= */
+
 .card {
     background-color: #ffffff;
     border: 1px solid #e5e7eb;
@@ -64,19 +167,55 @@ a {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 }
 
-/* Blog layout */
+.content {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 30px;
+}
+
+.content p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-intro {
+    font-size: 1em;
+    color: #4b5563;
+    margin-bottom: 25px;
+    max-width: 700px;
+}
+
+
+/* =========================
+   Intro
+   ========================= */
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #4b5563;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   Blog
+   ========================= */
+
 .blog-list {
     margin-top: 40px;
 }
 
-/* Blog post cards */
 .blog-post {
     margin-bottom: 30px;
 }
 
 .blog-post h2 {
     margin-bottom: 6px;
-    font-size: 1.4em;
 }
 
 .blog-post h2 a {
@@ -94,6 +233,11 @@ a {
     margin-bottom: 12px;
 }
 
+
+/* =========================
+   Lists
+   ========================= */
+
 ul {
     padding-left: 20px;
 }
@@ -102,73 +246,39 @@ li {
     margin-bottom: 8px;
 }
 
-.content p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-/* Intro section */
-.intro {
-    text-align: center;
-    margin-bottom: 50px;
-}
+/* =========================
+   Teaching & Education timelines
+   ========================= */
 
-.tagline {
-    font-size: 1.1em;
-    color: #4b5563;
-    margin-top: 8px;
-}
-
-/* Content section */
-.content {
-    border-top: 1px solid #e5e7eb;
-    padding-top: 30px;
-}
-
-/* Section intro text */
-.section-intro {
-    font-size: 1em;
-    color: #4b5563;
-    margin-bottom: 25px;
-    max-width: 700px;
-}
-
-.research-list {
-    margin-top: 20px;
-}
-
-.research-list li {
-    margin-bottom: 8px;
-}
-
-h2 {
-    margin-top: 30px;
-    font-size: 1.4em;
-}
-
-/* Teaching timeline */
-.teaching-list {
+.teaching-list,
+.education-list {
     list-style: none;
     padding-left: 0;
     margin-top: 20px;
 }
 
-.teaching-list li {
+.teaching-list li,
+.education-list li {
     margin-bottom: 22px;
     padding-left: 12px;
     border-left: 3px solid #e5e7eb;
 }
 
-.teaching-list em {
+.education-list li {
+    padding-left: 14px;
+}
+
+.teaching-list em,
+.education-list em {
     font-style: italic;
 }
 
-.teaching-list a {
-    color: #2563eb;
-}
 
-/* Footer */
+/* =========================
+   Footer
+   ========================= */
+
 footer {
     margin-top: 60px;
     padding-top: 20px;
@@ -178,131 +288,31 @@ footer {
     text-align: center;
 }
 
-footer a {
-    color: #2563eb;
-}
 
-/* Education timeline */
-.education-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 20px;
-}
+/* =========================
+   Mail icon block
+   ========================= */
 
-.education-list li {
-    margin-bottom: 24px;
-    padding-left: 14px;
-    border-left: 3px solid #e5e7eb;
-}
-
-.education-list em {
-    font-style: italic;
-}
-
-.education-list a {
-    color: #2563eb;
-}
-
-.last-updated {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.85em;
-    color: #9ca3af;
-}
-
-/* Contact page */
-.contact-card p {
-    margin-bottom: 22px;
-}
-
-.contact-card strong {
-    font-weight: 600;
-}
-
-/* Mail icon block */
 .mail-icon-container {
     text-align: center;
     margin-top: 40px;
 }
 
-/* Icon itself */
 .mail-icon {
     width: 72px;
     height: 72px;
-    fill: #6b7280;              /* neutral grey */
+    fill: #6b7280;
     transition: fill 0.25s ease;
     cursor: pointer;
 }
 
-/* Hover effect */
 .mail-icon-container a:hover .mail-icon {
-    fill: #2563eb;              /* your site’s accent blue */
+    fill: #2563eb;
 }
 
-/* Caption */
 .mail-caption {
     display: block;
     margin-top: 8px;
     font-size: 0.95em;
     color: #4b5563;
-}
-
-/* Navigation base */
-.navbar {
-    margin-bottom: 30px;
-}
-
-.nav-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.site-title {
-    font-weight: 600;
-    font-size: 1.4em;   /* increase this */
-}
-
-/* Nav links (desktop default) */
-.nav-links {
-    display: flex;
-    gap: 20px;
-    margin-top: 10px;
-}
-
-/* Hide hamburger by default */
-.nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.8em;
-    cursor: pointer;
-}
-
-/* Mobile navigation */
-@media (max-width: 768px) {
-
-    .nav-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        margin-top: 15px;
-    }
-
-    .nav-links a {
-        padding: 8px 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
-@media (max-width: 768px) {
-    .site-title {
-        font-size: 1.35em;
-    }
 }
