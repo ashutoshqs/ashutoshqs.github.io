@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awards & Scholarships | Ashutosh</title>
     <link rel="stylesheet" href="css/style.css">
+    <title>Awards & Scholarships | Ashutosh</title>
+
     <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
@@ -23,6 +23,7 @@
 <nav class="navbar">
     <div class="nav-header">
         <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
         <button class="nav-toggle" aria-label="Toggle navigation">
             <span></span>
             <span></span>
@@ -40,33 +41,47 @@
     </div>
 </nav>
 
-<div class="content">
+<main class="page-content">
 
     <h1>Awards & Scholarships</h1>
 
     <p class="section-intro">
-        A brief record of academic awards, scholarships, and recognitions.
+        Academic awards, scholarships, and recognitions received in the course
+        of my education.
     </p>
 
-    <ul class="education-list">
-        <!-- Example entry -->
-        <li>
-            <strong>Institute Merit Scholarship</strong><br>
-            <em>Indian Institute of Technology Delhi</em><br>
-            Awarded for academic performance during the M.Sc. programme.
-            <span class="last-updated">2024</span>
-        </li>
+    <section class="card content">
 
-        <!-- Add more items like this -->
-    </ul>
+        <ul class="education-list">
 
-</div>
+            <li>
+                <strong>Institute Merit Scholarship</strong><br>
+                <em>Indian Institute of Technology Delhi</em><br>
+                Awarded for academic performance in the M.Sc. Mathematics programme.
+                <span class="last-updated">2024 – Present</span>
+            </li>
+
+            <li>
+                <strong>Merit-Based Scholarship</strong><br>
+                <em>Maharaja Ganga Singh University, Bikaner</em><br>
+                Awarded for consistent academic excellence during the undergraduate programme.
+                <span class="last-updated">2021 – 2024</span>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
 
 <footer>
     <p>
         © <span id="year"></span> Ashutosh · Mathematics<br>
         Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        Email:
+        <a href="mailto:mas247067@maths.iitd.ac.in">
+            mas247067@maths.iitd.ac.in
+        </a>
         <span class="last-updated">Last updated: January 2026</span>
     </p>
 </footer>
@@ -83,9 +98,7 @@
         toggle.classList.toggle("active");
         links.classList.toggle("active");
     });
-</script>
 
-<script>
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
             toggle.classList.remove("active");
@@ -94,8 +107,5 @@
     });
 </script>
 
-    
 </body>
-
-
 </html>
