@@ -262,7 +262,6 @@ footer a {
 .nav-header {
     display: flex;
     align-items: center;
-    margin-top: -4px;
 }
 
 .site-title {
