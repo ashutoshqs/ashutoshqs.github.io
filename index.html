@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ashutosh</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <title>Ashutosh</title>
     <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
-        }
-      };
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    }
+  };
+</script>
 
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
 <body>
 
-<!-- ================= Navigation (full width) ================= -->
-<nav class="navbar">
+    <nav class="navbar">
     <div class="nav-header">
         <span class="site-title">Ashutosh Sharma</span>
 
@@ -39,8 +37,6 @@
     </div>
 </nav>
 
-<!-- ================= Page content (centered) ================= -->
-<main class="page">
 
     <section class="intro">
         <img src="assets/profile.jpg" alt="Profile photo of Ashutosh" class="profile-photo">
@@ -53,58 +49,54 @@
     </section>
 
     <section class="content card">
-        <p>
-            I am a mathematics student with a strong interest in pure mathematics.
-            I am currently pursuing my master’s degree in mathematics at
-            <a href="https://www.iitd.ac.in" target="_blank" rel="noopener">
-                Indian Institute of Technology Delhi
-            </a>.
-        </p>
 
-        <p>
-            My academic interests lie primarily in mathematical research and
-            theoretical aspects of the subject, particularly in areas such as
-            number theory, algebra, and analysis. I am especially drawn to problems
-            that emphasize structure, rigor, and conceptual elegance.
-        </p>
+    <p>
+        I am a mathematics student with a strong interest in pure mathematics. I am currently pursuing my master’s degree in mathematics at 
+        <a href="https://www.iitd.ac.in" target="_blank">
+        Indian Institute of Technology Delhi
+        </a>.
+    </p>
 
-        <p>
-            This website serves as a personal academic homepage and contains
-            information about my education, research interests, academic activities,
-            and occasional mathematical writing.
-        </p>
-    </section>
+    <p>
+        My academic interests lie primarily in mathematical research and
+        theoretical aspects of the subject, particularly in areas such as
+        number theory, algebra, and analysis. I am especially drawn to problems
+        that emphasize structure, rigor, and conceptual elegance.
+    </p>
 
-    <!-- Mail icon block -->
-    <div class="mail-icon-container">
-        <a href="mailto:ashutoshqs@gmail.com" aria-label="Send me an email :)">
-            <svg class="mail-icon" viewBox="0 0 24 24" role="img">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
-                         c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5
-                         8-5V6l-8 5-8-5v2z"/>
-            </svg>
-        </a>
-        <span class="mail-caption">Click to mail me :)</span>
-    </div>
+    <p>
+        This website serves as a personal academic homepage and contains
+        information about my education, research interests, academic activities,
+        and occasional mathematical writing.
+    </p>
 
-    <footer>
-        <p>
-            © <span id="year"></span> Ashutosh · Mathematics<br>
-            Indian Institute of Technology Delhi<br>
-            Email:
-            <a href="mailto:mas247067@maths.iitd.ac.in">
-                mas247067@maths.iitd.ac.in
-            </a>
-            <span class="last-updated">Last updated: January 2026</span>
-        </p>
-    </footer>
+</section>
 
-</main>
+<div class="mail-icon-container">
+    <a href="mailto:ashutoshqs@gmail.com" aria-label="Send me an email :)">
+        <svg class="mail-icon" viewBox="0 0 24 24" role="img">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
+                     c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5
+                     8-5V6l-8 5-8-5v2z"/>
+        </svg>
+    </a>
+    <span class="mail-caption">Click to mail me :)</span>
+</div>
+    
+<footer>
+    <p>
+        © <span id="year"></span> Ashutosh · Mathematics<br>
+        Indian Institute of Technology Delhi<br>
+        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        <span class="last-updated">Last updated: January 2026</span>
+    </p>
+</footer>
 
-<!-- ================= Scripts ================= -->
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
+<script>
     const toggle = document.querySelector(".nav-toggle");
     const links = document.querySelector(".nav-links");
 
@@ -112,6 +104,8 @@
         links.classList.toggle("active");
     });
 </script>
-
+    
 </body>
+
+
 </html>
