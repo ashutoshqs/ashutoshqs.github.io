@@ -19,14 +19,23 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="navbar">
+    <div class="nav-header">
+        <span class="site-title">Ashutosh</span>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            &#9776;
+        </button>
+    </div>
+
+    <div class="nav-links">
         <a href="index.html">About</a>
         <a href="education.html">Education</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
         <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    </div>
+</nav>
 
 
     <section class="intro">
@@ -87,6 +96,15 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
+<script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        links.classList.toggle("active");
+    });
+</script>
+    
 </body>
 
 
