@@ -291,10 +291,18 @@ footer a {
     }
 
     .nav-links {
-        display: none;
+        display: flex;                 /* always flex */
         flex-direction: column;
-        margin-top: 15px;
         width: 100%;
+        margin-top: 15px;
+
+        max-height: 0;                 /* collapsed */
+        overflow: hidden;
+        opacity: 0;
+
+        transition:
+            max-height 0.3s ease,
+            opacity 0.2s ease;
     }
 
     .nav-links a {
@@ -302,7 +310,8 @@ footer a {
     }
 
     .nav-links.active {
-        display: flex;
+        max-height: 300px;             /* enough for links */
+        opacity: 1;
     }
 }
 
