@@ -5,34 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Blog | Ashutosh</title>
+
     <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
 
-    <nav>
+<nav class="navbar">
+    <div class="nav-header">
+        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links">
         <a href="index.html">About</a>
         <a href="education.html">Education</a>
         <a href="research.html">Research</a>
         <a href="teaching.html">Teaching</a>
+        <a href="awards.html">Awards</a>
         <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    </div>
+</nav>
+
+<main class="page-content">
 
     <h1>Blog</h1>
 
     <p class="section-intro">
-    Occasional writing on mathematics, intuition, and related thoughts.
-</p>
+        Occasional writing on mathematics, intuition, and related thoughts.
+    </p>
 
     <div class="blog-list">
 
@@ -62,11 +77,16 @@
 
     </div>
 
+</main>
+
 <footer>
     <p>
         © <span id="year"></span> Ashutosh · Mathematics<br>
         Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        Email:
+        <a href="mailto:mas247067@maths.iitd.ac.in">
+            mas247067@maths.iitd.ac.in
+        </a>
         <span class="last-updated">Last updated: January 2026</span>
     </p>
 </footer>
@@ -74,7 +94,23 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-    
-</body>
 
+<script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
 </html>
