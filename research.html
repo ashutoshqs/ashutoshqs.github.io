@@ -3,67 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Ashutosh</title>
     <link rel="stylesheet" href="css/style.css">
-<script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
+    <title>Research | Ashutosh</title>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
+
 <body>
 
-<nav>
-    <a href="index.html">About</a>
-    <a href="education.html">Education</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
+<nav class="navbar">
+    <div class="nav-header">
+        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="awards.html">Awards</a>
+        <a href="blog.html">Blog</a>
+    </div>
 </nav>
 
-<h1>Research Interests</h1>
+<main class="page-content">
 
-<p class="section-intro">
-    Areas of interest and thematic directions of my academic work.
-</p>
+    <h1>Research Interests</h1>
 
-<section class="card content">
-
-    <p>
-        My research interests lie in pure mathematics, with a primary focus on
-        number theory. Within number theory, I am drawn to questions related to transcendence,
-        Diophantine problems, and the interaction of number theoretic functions with analytic
-        methods. I am also interested in related areas of algebra and analysis
-        that naturally connect to these themes.
+    <p class="section-intro">
+        Areas of interest and thematic directions of my academic work.
     </p>
 
-    <p>
-        I am broadly motivated by foundational and conceptual aspects of
-        mathematics, and I am keen on developing a deeper understanding of
-        abstract structures and their underlying principles.
-    </p>
+    <section class="card content">
 
-</section>
+        <p>
+            My research interests lie in pure mathematics, with a primary focus on
+            number theory. Within number theory, I am drawn to questions related
+            to transcendence, Diophantine problems, and the interaction of number
+            theoretic functions with analytic methods. I am also interested in
+            related areas of algebra and analysis that naturally connect to these
+            themes.
+        </p>
 
-<ul class="research-list">
-    <li>Transcendental number theory</li>
-    <li>Diophantine approximation</li>
-    <li>Analytic methods in number theory</li>
-    <li>Connections with algebra and analysis</li>
-</ul>
+        <p>
+            I am broadly motivated by foundational and conceptual aspects of
+            mathematics, and I am keen on developing a deeper understanding of
+            abstract structures and their underlying principles.
+        </p>
+
+    </section>
+
+    <ul class="research-list">
+        <li>Transcendental number theory</li>
+        <li>Diophantine approximation</li>
+        <li>Analytic methods in number theory</li>
+        <li>Connections with algebra and analysis</li>
+    </ul>
+
+</main>
 
 <footer>
     <p>
         © <span id="year"></span> Ashutosh · Mathematics<br>
         Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        Email:
+        <a href="mailto:mas247067@maths.iitd.ac.in">
+            mas247067@maths.iitd.ac.in
+        </a>
         <span class="last-updated">Last updated: January 2026</span>
     </p>
 </footer>
@@ -71,6 +92,23 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-    
+
+<script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
 </body>
 </html>
