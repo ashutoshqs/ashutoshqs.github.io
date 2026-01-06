@@ -249,6 +249,9 @@ footer a {
 
 /* Navigation base */
 .navbar {
+    display: flex;
+    justify-content: space-between; /* key line */
+    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -260,7 +263,7 @@ footer a {
 
 .site-title {
     font-weight: 600;
-    font-size: 1.4em;   /* increase this */
+    font-size: 1.5em;   /* increase this */
 }
 
 /* Nav links (desktop default) */
@@ -303,6 +306,6 @@ footer a {
 
 @media (max-width: 768px) {
     .site-title {
-        font-size: 1.35em;
+        font-size: 1.1em;
     }
 }
