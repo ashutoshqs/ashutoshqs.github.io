@@ -1,313 +1,126 @@
-/* Global layout */
+/* =========================
+   Base & Typography
+   ========================= */
 
 body {
     font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 700;
-}
-
-body {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 40px 24px 24px;
-    line-height: 1.7;
     background-color: #f9fafb;
     color: #1f2937;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Navigation bar */
-nav {
-    margin-bottom: 64px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-nav a {
-    text-decoration: none;
-    color: #1d4ed8;
-    font-weight: 500;
-}
-
-nav a:hover {
-    text-decoration: underline;
+/* Layout container */
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 48px 24px 32px;
 }
 
 /* Headings */
-h1 {
-    font-size: 2.4em;
-    margin-bottom: 12px;
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
     color: #111827;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+h3 {
+    margin-top: 24px;
+    margin-bottom: 10px;
 }
 
 /* Paragraphs */
 p {
     font-size: 1.05em;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
-/* Links inside content */
+/* Links */
 a {
-    color: #2563eb;
-}
-
-/* Profile photo */
-.profile-photo {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 10%;
-    display: block;
-    margin: 0 auto 20px auto;
-}
-
-/* Card style */
-.card {
-    background-color: #ffffff;
-    border: 1px solid #f0f0f0;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-}
-
-/* Blog layout */
-.blog-list {
-    margin-top: 40px;
-}
-
-/* Blog post cards */
-.blog-post {
-    margin-bottom: 30px;
-}
-
-.blog-post h2 {
-    margin-bottom: 6px;
-    font-size: 1.4em;
-}
-
-.blog-post h2 a {
+    color: #1d4ed8;
     text-decoration: none;
-    color: #111827;
 }
 
-.blog-post h2 a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.post-date {
-    font-size: 0.9em;
-    color: #6b7280;
-    margin-bottom: 12px;
-}
-
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-.content p {
-    max-width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Intro section */
-.intro {
-    text-align: center;
-    margin-bottom: 64px;
-}
-
-.tagline {
-    font-size: 1.1em;
-    color: #4b5563;
-    margin-top: 8px;
-}
-
-/* Content section */
-.content {
-    border-top: 1px solid #e5e7eb;
-    padding-top: 30px;
-}
-
-/* Section intro text */
-.section-intro {
-    font-size: 1em;
-    color: #4b5563;
-    margin-bottom: 25px;
-    max-width: 700px;
-}
-
-.research-list {
-    margin-top: 20px;
-}
-
-.research-list li {
-    margin-bottom: 8px;
-}
-
-h2 {
-    margin-top: 30px;
-    font-size: 1.4em;
-}
-
-/* Teaching timeline */
-.teaching-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 20px;
-}
-
-.teaching-list li {
-    margin-bottom: 22px;
-    padding-left: 12px;
-    border-left: 3px solid #e5e7eb;
-}
-
-.teaching-list em {
-    font-style: italic;
-}
-
-.teaching-list a {
-    color: #2563eb;
-}
-
-/* Footer */
-footer {
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #e5e7eb;
-    font-size: 0.9em;
-    color: #6b7280;
-    text-align: center;
-}
-
-footer a {
-    color: #2563eb;
-}
-
-/* Education timeline */
-.education-list {
-    list-style: none;
-    padding-left: 0;
-    margin-top: 20px;
-}
-
-.education-list li {
-    margin-bottom: 24px;
-    padding-left: 14px;
-    border-left: 3px solid #e5e7eb;
-}
-
-.education-list em {
-    font-style: italic;
-}
-
-.education-list a {
-    color: #2563eb;
-}
-
-.last-updated {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.85em;
-    color: #9ca3af;
-}
-
-/* Contact page */
-.contact-card p {
-    margin-bottom: 22px;
-}
-
-.contact-card strong {
-    font-weight: 600;
-}
-
-/* Mail icon block */
-.mail-icon-container {
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* Icon itself */
-.mail-icon {
-    width: 72px;
-    height: 72px;
-    fill: #6b7280;              /* neutral grey */
-    transition: fill 0.25s ease;
-    cursor: pointer;
-}
-
-/* Hover effect */
-.mail-icon-container a:hover .mail-icon {
-    fill: #2563eb;              /* your site’s accent blue */
-}
-
-/* Caption */
-.mail-caption {
-    display: block;
-    margin-top: 8px;
-    font-size: 0.95em;
-    color: #4b5563;
-}
-
 /* =========================
-   Navigation (Desktop)
+   Navigation
    ========================= */
 
 .navbar {
-    margin-bottom: 30px;
+    margin-bottom: 64px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding-top: 0px;
 }
 
 .nav-header {
     display: flex;
     align-items: center;
-    margin-top: 0;
 }
 
 .site-title {
     font-weight: 600;
-    font-size: 1.7em;
-    color: #111827;        /* same as text */
+    font-size: 1.6em;
+    color: #111827;
     text-decoration: none;
-    
-   line-height: 1;
+    line-height: 1;
 }
 
 .site-title:hover {
-    text-decoration: none;
-    opacity: 0.85;         /* subtle feedback */
+    opacity: 0.85;
 }
 
-/* Nav links (desktop) */
+/* Nav links */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 24px;
 }
 
-/* Hide hamburger on desktop */
+.nav-links a {
+    position: relative;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #1d4ed8;
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger (hidden desktop) */
 .nav-toggle {
     display: none;
     background: none;
     border: none;
-    font-size: 1.8em;
-    cursor: pointer;
-}
-
-/* Hamburger icon bars */
-.nav-toggle {
-    display: none;
     width: 28px;
     height: 22px;
     position: relative;
+    cursor: pointer;
 }
 
 .nav-toggle span {
@@ -319,19 +132,10 @@ footer a {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.nav-toggle span:nth-child(1) {
-    top: 0;
-}
+.nav-toggle span:nth-child(1) { top: 0; }
+.nav-toggle span:nth-child(2) { top: 9px; }
+.nav-toggle span:nth-child(3) { top: 18px; }
 
-.nav-toggle span:nth-child(2) {
-    top: 9px;
-}
-
-.nav-toggle span:nth-child(3) {
-    top: 18px;
-}
-
-/* Cross state */
 .nav-toggle.active span:nth-child(1) {
     transform: rotate(45deg);
     top: 9px;
@@ -346,9 +150,190 @@ footer a {
     top: 9px;
 }
 
+/* =========================
+   Intro Section
+   ========================= */
+
+.intro {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #4b5563;
+    margin-top: 8px;
+}
+
+/* Profile photo */
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto 24px auto;
+}
 
 /* =========================
-   Navigation (Mobile)
+   Content Sections
+   ========================= */
+
+.content {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 32px;
+}
+
+.section-intro {
+    font-size: 1em;
+    color: #4b5563;
+    margin-bottom: 24px;
+    max-width: 700px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Research */
+.research-list {
+    margin-top: 16px;
+}
+
+/* =========================
+   Cards
+   ========================= */
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* =========================
+   Blog
+   ========================= */
+
+.blog-list {
+    margin-top: 48px;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+}
+
+.blog-post h2 {
+    margin-bottom: 8px;
+}
+
+.blog-post p {
+    font-size: 1.08em;
+    line-height: 1.75;
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #6b7280;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   Teaching & Education Timelines
+   ========================= */
+
+.teaching-list,
+.education-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.teaching-list li,
+.education-list li {
+    margin-bottom: 24px;
+    padding-left: 14px;
+    border-left: 3px solid #e5e7eb;
+}
+
+.teaching-list em,
+.education-list em {
+    font-style: italic;
+}
+
+.last-updated {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85em;
+    color: #9ca3af;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9em;
+    color: #6b7280;
+    text-align: center;
+}
+
+/* =========================
+   Mail Icon
+   ========================= */
+
+.mail-icon-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.mail-icon {
+    width: 72px;
+    height: 72px;
+    fill: #6b7280;
+    transition: fill 0.25s ease;
+    cursor: pointer;
+}
+
+.mail-icon-container a:hover .mail-icon {
+    fill: #1d4ed8;
+}
+
+.mail-caption {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #4b5563;
+}
+
+/* =========================
+   Subtle Animation
+   ========================= */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================
+   Mobile Navigation
    ========================= */
 
 @media (max-width: 768px) {
@@ -368,7 +353,6 @@ footer a {
     }
 
     .nav-links {
-        display: flex;
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
@@ -382,59 +366,12 @@ footer a {
     }
 
     .nav-links.active {
-        max-height: 400px; /* large enough for all links */
+        max-height: 400px;
         opacity: 1;
     }
-}
 
-.page-content {
-    margin-top: 50px;
-}
-
-.nav-links a {
-    position: relative;
-    text-decoration: none;
-    color: #1f2937;
-    font-weight: 500;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background-color: #1d4ed8;
-    transition: width 0.25s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.blog-post p {
-    font-size: 1.08em;
-    line-height: 1.75;
-}
-
-.blog-post h2 {
-    margin-top: 40px;
-}
-
-.blog-post h3 {
-    margin-top: 28px;
-}
-
-.fade-in {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: fadeInUp 0.6s ease forwards;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .profile-photo {
+        width: 220px;
+        height: 220px;
     }
 }
