@@ -390,3 +390,25 @@ footer a {
 .page-content {
     margin-top: 50px;
 }
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #1d4ed8;
+    transition: width 0.25s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
