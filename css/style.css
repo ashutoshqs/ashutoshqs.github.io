@@ -15,7 +15,7 @@ body {
     padding: 40px 24px 24px;
     line-height: 1.7;
     background-color: #f9fafb;
-    color: #1f2933;
+    color: #1f2937;
 }
 
 /* Navigation bar */
@@ -27,7 +27,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #2563eb;
+    color: #1d4ed8;
     font-weight: 500;
 }
 
