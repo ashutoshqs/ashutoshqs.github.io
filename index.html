@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#f9fafb">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Ashutosh</title>
-    <script>
-  MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']]
-    }
-  };
-</script>
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Ashutosh Sharma | Mathematics</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#f9fafb">
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 </head>
+
 <body>
 
+<div class="container">
+
+    <!-- ================= NAVIGATION ================= -->
+
     <nav class="navbar">
-    <div class="nav-header">
-        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+        <div class="nav-header">
+            <a href="index.html" class="site-title">Ashutosh Sharma</a>
 
-        <button class="nav-toggle" aria-label="Toggle navigation">
-    <span></span>
-    <span></span>
-    <span></span>
-</button>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
+        <div class="nav-links">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="awards.html">Awards</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Intro Section -->
+        <section class="intro fade-in">
+
+            <img src="assets/profile.jpg" 
+                 alt="Profile photo of Ashutosh Sharma" 
+                 class="profile-photo">
+
+            <h1>Ashutosh Sharma</h1>
+
+            <p class="tagline">
+                Graduate student in mathematics, with a focus on structure, rigour, and conceptual clarity.
+            </p>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="content card fade-in">
+
+            <p>
+                I am currently pursuing my master’s degree in mathematics at 
+                <a href="https://www.iitd.ac.in" target="_blank">
+                    Indian Institute of Technology Delhi
+                </a>.
+            </p>
+
+            <p>
+                My academic interests lie primarily in pure mathematics, particularly in
+                number theory, algebra, and analysis. I am especially drawn to problems
+                that emphasize structure, rigor, and conceptual elegance.
+            </p>
+
+            <p>
+                This website serves as my academic homepage and contains information
+                about my education, research interests, teaching activities,
+                and occasional mathematical writing.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- ================= CONTACT ICON ================= -->
+
+    <div class="mail-icon-container fade-in">
+        <a href="mailto:ashutoshqs@gmail.com" aria-label="Send me an email">
+            <svg class="mail-icon" viewBox="0 0 24 24" role="img">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
+                         c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5
+                         8-5V6l-8 5-8-5v2z"/>
+            </svg>
+        </a>
+        <span class="mail-caption">Click to send me an email</span>
     </div>
 
-    <div class="nav-links">
-        <a href="index.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="awards.html">Awards</a>
-        <a href="blog.html">Blog</a>
-    </div>
-</nav>
+    <!-- ================= FOOTER ================= -->
 
-<main class="page-content">    
-
-    <section class="intro">
-        <img src="assets/profile.jpg" alt="Profile photo of Ashutosh" class="profile-photo">
-
-        <h1>Ashutosh Sharma</h1>
-
-        <p class="tagline">
-            A student of mathematics.
+    <footer>
+        <p>
+            © <span id="year"></span> Ashutosh Sharma · Mathematics<br>
+            Indian Institute of Technology Delhi<br>
+            Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
         </p>
-    </section>
-
-    <section class="content card">
-
-    <p>
-        I am a mathematics student with a strong interest in pure mathematics. I am currently pursuing my master’s degree in mathematics at 
-        <a href="https://www.iitd.ac.in" target="_blank">
-        Indian Institute of Technology Delhi
-        </a>.
-    </p>
-
-    <p>
-        My academic interests lie primarily in mathematical research and
-        theoretical aspects of the subject, particularly in areas such as
-        number theory, algebra, and analysis. I am especially drawn to problems
-        that emphasize structure, rigor, and conceptual elegance.
-    </p>
-
-    <p>
-        This website serves as a personal academic homepage and contains
-        information about my education, research interests, academic activities,
-        and occasional mathematical writing.
-    </p>
-
-</section>
-
-</main>    
-
-<div class="mail-icon-container">
-    <a href="mailto:ashutoshqs@gmail.com" aria-label="Send me an email :)">
-        <svg class="mail-icon" viewBox="0 0 24 24" role="img">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
-                     c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5
-                     8-5V6l-8 5-8-5v2z"/>
-        </svg>
-    </a>
-    <span class="mail-caption">Click to mail me :)</span>
-</div>
-    
-<footer>
-    <p>
-        © <span id="year"></span> Ashutosh · Mathematics<br>
-        Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
         <span class="last-updated">Last updated: January 2026</span>
-    </p>
-</footer>
+    </footer>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
-<script>
     const toggle = document.querySelector(".nav-toggle");
     const links = document.querySelector(".nav-links");
 
@@ -117,9 +136,7 @@
         toggle.classList.toggle("active");
         links.classList.toggle("active");
     });
-</script>
 
-<script>
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
             toggle.classList.remove("active");
@@ -128,8 +145,5 @@
     });
 </script>
 
-    
 </body>
-
-
 </html>
