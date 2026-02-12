@@ -41,11 +41,6 @@
                 <span></span>
                 <span></span>
             </button>
-
-            <button id="dark-mode-toggle" aria-label="Toggle dark mode" style="margin-left:12px; background:none; border:none; cursor:pointer; font-size:1.2em;">
-                🌙
-            </button>
-
         </div>
 
         <div class="nav-links">
@@ -73,6 +68,14 @@
 
             <p class="tagline">
                 Graduate student in mathematics, with a focus on structure, rigour, and conceptual clarity.
+            </p>
+
+            <p style="margin-top:16px;">
+                <a href="assets/Ashutosh_Sharma_CV.pdf" 
+                    class="cv-button" 
+                    target="_blank">
+                    Download CV
+                </a>
             </p>
 
         </section>
@@ -176,21 +179,6 @@
         });
     });
 </script>
-
-<script>
-const darkToggle = document.getElementById("dark-mode-toggle");
-
-darkToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-        darkToggle.textContent = "☀️";
-    } else {
-        darkToggle.textContent = "🌙";
-    }
-});
-</script>
-
 
 </body>
 </html>
