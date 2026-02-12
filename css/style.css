@@ -507,16 +507,16 @@ body.dark-mode footer {
     align-items: center;
     margin-left: 6px;
     text-decoration: none;
-    color: #9ca3af;   /* default grey */
+    color: #9ca3af;   /* neutral grey */
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .arrow-icon {
-    width: 16px;
-    height: 16px;
+    width: 18px;      /* slightly larger */
+    height: 18px;
 }
 
 .course-link-icon:hover {
-    color: #1d4ed8;   /* site accent blue */
+    color: #1d4ed8;   /* accent blue */
     transform: translateY(-1px);
 }
