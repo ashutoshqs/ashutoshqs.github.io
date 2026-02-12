@@ -375,3 +375,36 @@ footer {
         height: 220px;
     }
 }
+
+/* =========================
+   Dark Mode
+   ========================= */
+
+body.dark-mode {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #f8fafc;
+}
+
+body.dark-mode .card {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+body.dark-mode .content {
+    border-top: 1px solid #334155;
+}
+
+body.dark-mode a {
+    color: #60a5fa;
+}
+
+body.dark-mode footer {
+    border-top: 1px solid #334155;
+    color: #94a3b8;
+}
