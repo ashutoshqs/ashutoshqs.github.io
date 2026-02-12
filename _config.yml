@@ -1,9 +1,0 @@
-title: Ashutosh Sharma
-description: Academic homepage of Ashutosh Sharma
-url: "https://ashutoshqs.github.io"
-
-markdown: kramdown
-permalink: /blog/:title/
-
-plugins:
-  - jekyll-feed
