@@ -499,3 +499,24 @@ body.dark-mode footer {
 .course-title:hover::after {
     width: 100%;
 }
+
+/* Course page icon link (subtle version) */
+
+.course-link-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 6px;
+    text-decoration: none;
+}
+
+.clip-icon {
+    width: 16px;
+    height: 16px;
+    fill: #9ca3af;           /* neutral grey */
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+.course-link-icon:hover .clip-icon {
+    fill: #1d4ed8;           /* site accent blue */
+    transform: translateY(-1px);
+}
