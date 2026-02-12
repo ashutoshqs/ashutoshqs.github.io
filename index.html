@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ashutosh Sharma | Mathematics</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#f9fafb">
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+        <div class="nav-header">
+            <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="awards.html">Awards</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- Intro Section -->
+        <section class="intro fade-in">
+
+            <img src="assets/profile.jpg" 
+                 alt="Profile photo of Ashutosh Sharma" 
+                 class="profile-photo">
+
+            <h1>Ashutosh Sharma</h1>
+
+            <p class="tagline">
+                Graduate student in mathematics, with a focus on structure, rigour, and conceptual clarity.
+            </p>
+
+            <p style="margin-top:16px;">
+                <a href="assets/Ashutosh_Sharma_CV.pdf" 
+                    class="cv-button" 
+                    target="_blank">
+                    Download CV
+                </a>
+            </p>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="content card fade-in">
+
+            <p>
+                I am currently pursuing my master’s degree in mathematics at 
+                <a href="https://www.iitd.ac.in" target="_blank">
+                    Indian Institute of Technology Delhi
+                </a>.
+            </p>
+
+            <p>
+                My academic interests lie primarily in pure mathematics, particularly in
+                number theory, algebra, and analysis. I am especially drawn to problems
+                that emphasize structure, rigor, and conceptual elegance.
+            </p>
+
+            <p>
+                This website serves as my academic homepage, where I document my studies,
+                research interests, teaching activities, and occasional mathematical
+                reflections.
+            </p>
+
+        </section>
+
+        <section class="content fade-in">
+
+    <h2>Recent Writing</h2>
+
+    <div class="blog-list">
+
+        <div class="blog-post">
+            <h3><a href="blog/sample-post.html">On Structure and Rigor in Mathematics</a></h3>
+            <div class="post-date">January 2026</div>
+            <p>
+                A short reflection on the importance of conceptual clarity and structural thinking in pure mathematics.
+            </p>
+        </div>
+
+        <div class="blog-post">
+            <h3><a href="blog/sample-post-2.html">Notes on Measure Theory</a></h3>
+            <div class="post-date">December 2025</div>
+            <p>
+                Personal notes and observations while studying foundational results in measure theory.
+            </p>
+        </div>
+    
+    </div>
+
+</section>
+
+
+    </main>
+
+    <!-- ================= CONTACT ICON ================= -->
+
+    <div class="mail-icon-container fade-in">
+        <a href="mailto:ashutoshqs@gmail.com" aria-label="Send me an email">
+            <svg class="mail-icon" viewBox="0 0 24 24" role="img">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4
+                         c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 4l8 5
+                         8-5V6l-8 5-8-5v2z"/>
+            </svg>
+        </a>
+        <span class="mail-caption">I would be glad to hear from you.</span>
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>
+            © <span id="year"></span> Ashutosh · Mathematics<br>
+            Indian Institute of Technology Delhi<br>
+            Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        </p>
+        <span class="last-updated">Last updated: January 2026</span>
+    </footer>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
+</html>

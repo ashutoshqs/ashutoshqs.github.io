@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#f9fafb">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blog | Ashutosh</title>
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="nav-header">
+        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="research.html">Research</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="awards.html">Awards</a>
+        <a href="blog.html">Blog</a>
+    </div>
+</nav>
+
+<main class="page-content">
+
+    <h1>Blog</h1>
+
+    <p class="section-intro">
+        Occasional writing on mathematics, intuition, and related thoughts.
+    </p>
+
+    <div class="blog-list">
+
+        <article class="card blog-post">
+            <h2>
+                <a href="#">On Learning Pure Mathematics</a>
+            </h2>
+            <p class="post-date">January 5, 2026</p>
+            <p>
+                Some reflections on studying pure mathematics, abstraction,
+                and why I enjoy the subject.
+                Example equation:
+                $$\sum_{n=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}.$$
+            </p>
+        </article>
+
+        <article class="card blog-post">
+            <h2>
+                <a href="#">Why Minimalism in Mathematics Appeals to Me</a>
+            </h2>
+            <p class="post-date">December 20, 2025</p>
+            <p>
+                Thoughts on minimalism, structure, and elegance in mathematical
+                thinking.
+            </p>
+        </article>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>
+        © <span id="year"></span> Ashutosh · Mathematics<br>
+        Indian Institute of Technology Delhi<br>
+        Email:
+        <a href="mailto:mas247067@maths.iitd.ac.in">
+            mas247067@maths.iitd.ac.in
+        </a>
+        <span class="last-updated">Last updated: January 2026</span>
+    </p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<script>
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    toggle.addEventListener("click", () => {
+        toggle.classList.toggle("active");
+        links.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
+    });
+</script>
+
+</body>
+</html>
