@@ -550,7 +550,10 @@ body.dark-mode footer {
 /* Individual blog post */
 
 .post-content {
-    max-width: 720px;
+    max-width: 680px;
+   margin: 0 auto;
+   line-height: 1.8;
+   color: #1f2937;
 }
 
 .post-content h1 {
@@ -563,6 +566,9 @@ body.dark-mode footer {
 
 .post-content h2 {
     margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
 }
 
 .post-content hr {
@@ -573,4 +579,20 @@ body.dark-mode footer {
 .post-date {
     font-size: 0.9em;
     color: #6b7280;
+}
+
+.post-content p {
+    margin-bottom: 22px;
+}
+
+.post-content mjx-container {
+    margin: 22px 0;
+}
+
+.post-content a {
+    color: #1d4ed8;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
 }
