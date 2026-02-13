@@ -1,101 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#f9fafb">
+    <meta name="description" content="Educational background of Ashutosh Sharma — M.Sc. in Mathematics at IIT Delhi, B.Sc. in Mathematics at MGSU Bikaner.">
+
+    <title>Education | Ashutosh Sharma</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Education | Ashutosh</title>
 
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          displayMath: [['$$', '$$'], ['\\[', '\\]']]
-        }
-      };
-    </script>
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#f9fafb">
 
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body>
 
-<nav class="navbar">
-    <div class="nav-header">
-        <a href="index.html" class="site-title">Ashutosh Sharma</a>
+<div class="container">
 
-        <button class="nav-toggle" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
+    <!-- ================= NAVIGATION ================= -->
 
-    <div class="nav-links">
-        <a href="index.html">About</a>
-        <a href="education.html">Education</a>
-        <a href="research.html">Research</a>
-        <a href="teaching.html">Teaching</a>
-        <a href="awards.html">Awards</a>
-        <a href="blog.html">Blog</a>
-    </div>
-</nav>
+    <nav class="navbar">
+        <div class="nav-header">
+            <a href="index.html" class="site-title">Ashutosh Sharma</a>
 
-<main class="page-content">
-    
-    <h1>Education</h1>
-    
-    <p class="section-intro">
-        Academic background and formal training in mathematics.
-    </p>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
 
-    <section class="card content">
-        
-    <ul class="education-list">
+        <div class="nav-links">
+            <a href="index.html">About</a>
+            <a href="education.html">Education</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="awards.html">Awards</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </nav>
 
-        <li>
-            <strong>2024 – Present</strong><br>
-            <em>M.Sc. in Mathematics</em><br>
-            <a href="https://www.iitd.ac.in" target="_blank">
-                Indian Institute of Technology Delhi
-            </a><br>
-            <span>Thesis: Transcendental Number Theory</span>
-        </li>
+    <!-- ================= MAIN CONTENT ================= -->
 
-        <li>
-            <strong>2021 – 2024</strong><br>
-            <em>B.Sc. in Mathematics</em><br>
-            <a href="https://www.mgsubikaner.ac.in/" target="_blank">
-                Maharaja Ganga Singh University, Bikaner
-            </a><br>
-            <span>Institute Rank: 3</span>
-        </li>
+    <main>
 
-    </ul>
+        <section class="content fade-in">
 
-</section>
+            <h1>Education</h1>
 
-</main>    
+            <p class="section-intro">
+                Academic background and formal training in mathematics.
+            </p>
 
-<footer>
-    <p>
-        © <span id="year"></span> Ashutosh · Mathematics<br>
-        Indian Institute of Technology Delhi<br>
-        Email: <a href="mailto:mas247067@maths.iitd.ac.in">mas247067@maths.iitd.ac.in</a>
+        </section>
+
+        <section class="card content fade-in">
+
+            <ul class="education-list">
+
+                <li>
+                    <strong>2024 – Present</strong><br>
+                    <em>M.Sc. in Mathematics</em><br>
+                    <a href="https://www.iitd.ac.in" target="_blank" rel="noopener">
+                        Indian Institute of Technology Delhi
+                    </a><br>
+                    CGPA: 9.508<br>
+                    Department Rank: 1<br>
+                    Thesis: <em>Transcendental Number Theory</em>
+                </li>
+
+                <li>
+                    <strong>2021 – 2024</strong><br>
+                    <em>B.Sc. in Mathematics</em><br>
+                    <a href="https://www.mgsubikaner.ac.in/" target="_blank" rel="noopener">
+                        Maharaja Ganga Singh University, Bikaner
+                    </a><br>
+                    Percentage: 85.78%<br>
+                    Institute Rank: 3
+                </li>
+
+            </ul>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>
+            © <span id="year"></span> Ashutosh · Mathematics<br>
+            Indian Institute of Technology Delhi<br>
+            Email:
+            <a href="mailto:mas247067@maths.iitd.ac.in">
+                mas247067@maths.iitd.ac.in
+            </a>
+        </p>
         <span class="last-updated">Last updated: January 2026</span>
-    </p>
-</footer>
+    </footer>
+
+</div>
+
+<!-- ================= SCRIPTS ================= -->
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-</script>
 
-<script>
     const toggle = document.querySelector(".nav-toggle");
     const links = document.querySelector(".nav-links");
 
