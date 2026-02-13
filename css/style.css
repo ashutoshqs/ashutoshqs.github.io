@@ -6,60 +6,52 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #f9fafb;
     color: #1f2937;
-    line-height: 1.75;
+    line-height: 1.72;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 /* Layout container */
 .container {
-    max-width: 760px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 64px 28px 48px;
+    padding: 42px 22px 28px;
 }
 
-/* =========================
-   Headings
-   ========================= */
-
+/* Headings */
 h1, h2, h3 {
     font-family: 'Libre Baskerville', serif;
-    color: #111827;
-}
-
-h1 {
-    font-size: 2.4em;
     font-weight: 700;
-    margin-bottom: 20px;
-    letter-spacing: -0.02em;
-}
-
-h2 {
-    font-size: 1.45em;
-    font-weight: 600;
-    margin-top: 48px;
-    margin-bottom: 16px;
+    color: #111827;
     letter-spacing: -0.01em;
 }
 
-h3 {
+h1 {
+    font-size: 2.15em;
+    margin-bottom: 14px;
+}
+
+h2 {
+    font-size: 1.35em;
     margin-top: 28px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 /* Paragraphs */
-
 p {
-    font-size: 1.06em;
-    margin-bottom: 18px;
+    font-size: 1.05em;
+    margin-bottom: 16px;
 }
 
 /* Links */
-
 a {
     color: #1d4ed8;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 
 a:hover {
@@ -71,7 +63,7 @@ a:hover {
    ========================= */
 
 .navbar {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -84,11 +76,10 @@ a:hover {
 
 .site-title {
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.55em;
     color: #111827;
     text-decoration: none;
     line-height: 1;
-    letter-spacing: -0.01em;
 }
 
 .site-title:hover {
@@ -96,10 +87,9 @@ a:hover {
 }
 
 /* Nav links */
-
 .nav-links {
     display: flex;
-    gap: 26px;
+    gap: 22px;
 }
 
 .nav-links a {
@@ -114,7 +104,7 @@ a:hover {
     left: 0;
     bottom: -4px;
     width: 0;
-    height: 2px;
+    height: 1.5px;
     background-color: #1d4ed8;
     transition: width 0.25s ease;
 }
@@ -124,7 +114,6 @@ a:hover {
 }
 
 /* Hamburger */
-
 .nav-toggle {
     display: none;
     background: none;
@@ -168,41 +157,49 @@ a:hover {
 
 .intro {
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 56px;
 }
 
 .tagline {
-    font-size: 1.12em;
+    font-size: 1.08em;
     color: #4b5563;
-    margin-top: 10px;
+    margin-top: 6px;
 }
 
 /* Profile photo */
-
 .profile-photo {
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 12%;
+    border-radius: 10%;
     display: block;
-    margin: 0 auto 28px auto;
+    margin: 0 auto 22px auto;
 }
 
 /* =========================
-   Section Structure
+   Content Sections
    ========================= */
 
 .content {
     border-top: 1px solid #e5e7eb;
-    padding-top: 40px;
-    margin-top: 56px;
+    padding-top: 26px;
+    margin-top: 26px;
 }
 
 .section-intro {
     font-size: 1em;
     color: #4b5563;
-    margin-bottom: 28px;
-    max-width: 720px;
+    margin-bottom: 22px;
+    max-width: 680px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 /* =========================
@@ -211,99 +208,123 @@ a:hover {
 
 .card {
     background-color: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 12px;
-    padding: 32px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f1f3f5;
+    border-radius: 8px;
+    padding: 22px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.025);
 }
 
 /* =========================
-   Lists & Timelines
+   CV Button
    ========================= */
 
-ul {
-    padding-left: 20px;
+.cv-button {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1.5px solid #1d4ed8;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+    color: #1d4ed8;
+    background-color: transparent;
+    transition: all 0.25s ease;
 }
 
-li {
-    margin-bottom: 10px;
+.cv-button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    text-decoration: none;
 }
+
+/* =========================
+   Teaching & Education
+   ========================= */
 
 .teaching-list,
 .education-list {
     list-style: none;
     padding-left: 0;
-    margin-top: 24px;
+    margin-top: 20px;
 }
 
 .teaching-list li,
 .education-list li {
-    margin-bottom: 32px;
-    padding-left: 16px;
-    border-left: 2px solid #e5e7eb;
+    margin-bottom: 22px;
+    padding-left: 14px;
+    border-left: 3px solid #e5e7eb;
 }
 
 .last-updated {
     display: block;
-    margin-top: 8px;
+    margin-top: 6px;
     font-size: 0.85em;
     color: #9ca3af;
 }
 
+/* Course arrow icon */
+
+.course-link-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    color: #9ca3af;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.4;
+}
+
+.course-link-icon:hover {
+    color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
 /* =========================
-   Recent Writing (Homepage)
+   Recent Writing
    ========================= */
 
 .recent-writing {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .recent-writing h2 {
-    margin-bottom: 36px;
+    margin-bottom: 26px;
 }
 
 .writing-item {
-    margin-bottom: 48px;
-    padding-bottom: 28px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #e5e7eb;
-    border-left: 2px solid transparent;
-    padding-left: 14px;
-    transition: border-color 0.2s ease;
+    border-left: 3px solid transparent;
+    padding-left: 12px;
+    transition: border-color 0.25s ease;
 }
 
 .writing-item:hover {
-    border-left: 2px solid #1d4ed8;
+    border-left: 3px solid #1d4ed8;
 }
 
 .writing-meta {
     font-size: 0.85em;
     color: #6b7280;
     margin-bottom: 6px;
-    letter-spacing: 0.02em;
 }
 
 .writing-item h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.28em;
+    margin: 0 0 6px 0;
+    font-size: 1.2em;
 }
 
 .writing-item h3 a {
     color: #111827;
-    text-decoration: none;
 }
 
 .writing-item h3 a:hover {
     color: #1d4ed8;
-}
-
-.writing-item p {
-    margin: 0;
-    color: #4b5563;
-    line-height: 1.7;
-}
-
-.view-all {
-    margin-top: 24px;
 }
 
 /* =========================
@@ -311,8 +332,8 @@ li {
    ========================= */
 
 .blog-entry {
-    margin-bottom: 64px;
-    padding-bottom: 28px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #e5e7eb;
 }
 
@@ -320,13 +341,7 @@ li {
     border-bottom: none;
 }
 
-.blog-entry h2 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .blog-entry h2 a {
-    text-decoration: none;
     color: #111827;
 }
 
@@ -344,37 +359,38 @@ li {
    ========================= */
 
 .post-content {
-    max-width: 700px;
+    max-width: 680px;
     margin: 0 auto;
-    line-height: 1.85;
-}
-
-.post-content h1 {
-    margin-bottom: 10px;
-}
-
-.post-content .post-date {
-    margin-bottom: 32px;
+    line-height: 1.8;
 }
 
 .post-content h2 {
-    margin-top: 52px;
-    margin-bottom: 14px;
-}
-
-.post-content p {
-    margin-bottom: 22px;
-}
-
-.post-content mjx-container {
-    margin: 22px 0;
+    margin-top: 36px;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .post-content hr {
-    margin: 64px 0 32px;
+    margin: 40px 0 20px;
     border: none;
     border-top: 1px solid #e5e7eb;
-    opacity: 0.6;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+    font-size: 0.9em;
+    color: #6b7280;
+    text-align: center;
 }
 
 /* =========================
@@ -383,15 +399,14 @@ li {
 
 .mail-icon-container {
     text-align: center;
-    margin-top: 56px;
+    margin-top: 36px;
 }
 
 .mail-icon {
-    width: 72px;
-    height: 72px;
+    width: 64px;
+    height: 64px;
     fill: #6b7280;
     transition: fill 0.25s ease;
-    cursor: pointer;
 }
 
 .mail-icon-container a:hover .mail-icon {
@@ -400,31 +415,18 @@ li {
 
 .mail-caption {
     display: block;
-    margin-top: 10px;
+    margin-top: 6px;
     font-size: 0.95em;
     color: #4b5563;
 }
 
 /* =========================
-   Footer
-   ========================= */
-
-footer {
-    margin-top: 96px;
-    padding-top: 32px;
-    border-top: 1px solid #e5e7eb;
-    font-size: 0.9em;
-    color: #6b7280;
-    text-align: center;
-}
-
-/* =========================
-   Subtle Animation
+   Animation
    ========================= */
 
 .fade-in {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(8px);
     animation: fadeInUp 0.6s ease forwards;
 }
 
@@ -447,7 +449,6 @@ footer {
     }
 
     .nav-header {
-        width: 100%;
         justify-content: space-between;
     }
 
@@ -461,11 +462,7 @@ footer {
         overflow: hidden;
         opacity: 0;
         transition: max-height 0.35s ease, opacity 0.25s ease;
-        margin-top: 20px;
-    }
-
-    .nav-links a {
-        padding: 10px 0;
+        margin-top: 18px;
     }
 
     .nav-links.active {
@@ -474,13 +471,13 @@ footer {
     }
 
     .profile-photo {
-        width: 70%;
+        width: 65%;
         max-width: 260px;
         height: auto;
         aspect-ratio: 1 / 1;
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.9em;
     }
 }
