@@ -520,3 +520,34 @@ body.dark-mode footer {
     color: #1d4ed8;   /* accent blue */
     transform: translateY(-1px);
 }
+
+/* Blog archive */
+
+.blog-entry {
+    margin-bottom: 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.blog-entry:last-child {
+    border-bottom: none;
+}
+
+.blog-entry h2 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.blog-entry h2 a {
+    text-decoration: none;
+    color: #111827;
+}
+
+.blog-entry h2 a:hover {
+    text-decoration: underline;
+}
+
+.post-date {
+    font-size: 0.9em;
+    color: #6b7280;
+}
