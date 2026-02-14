@@ -633,33 +633,3 @@ footer {
     height: 60px;
     opacity: 0.7;
 }
-
-/* =========================
-   404 Watermark
-   ========================= */
-
-.error-content {
-    position: relative;
-}
-
-.error-watermark {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -55%);
-    font-family: 'Libre Baskerville', serif;
-    font-size: 14em;
-    font-weight: 700;
-    color: rgba(29, 78, 216, 0.035);
-    letter-spacing: -0.05em;
-    pointer-events: none;
-    user-select: none;
-    z-index: 0;
-}
-
-.error-content h1,
-.error-content p,
-.error-link {
-    position: relative;
-    z-index: 1;
-}
