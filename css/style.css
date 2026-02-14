@@ -623,9 +623,6 @@ footer {
     border-bottom: 1px solid #1d4ed8;
 }
 
-body.error-page .navbar {
-    margin-bottom: 0;
-}
 /* 404 specific */
 body.error-page .navbar {
     margin-bottom: 80px;
