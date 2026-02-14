@@ -517,11 +517,12 @@ footer {
         overflow: hidden;
         opacity: 0;
         transition: max-height 0.35s ease, opacity 0.25s ease;
-        margin-top: 20px;
+        margin-top: 14px;
+        gap: 0;
     }
 
     .nav-links a {
-        padding: 10px 0;
+        padding: 6px 0;
     }
 
     .nav-links.active {
