@@ -585,13 +585,13 @@ footer {
    ========================= */
 
 .error-page .container {
-    padding-top: 120px;
-    padding-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
 .error-content {
-    margin-bottom: 70px;
+    margin-bottom: 20px;
 }
 
 .error-content h1 {
@@ -623,7 +623,7 @@ footer {
 }
 
 .error-mark img {
-    width: 110px;
-    height: auto;
+    width: 60px;
+    height: 60px;
     opacity: 0.7;
 }
