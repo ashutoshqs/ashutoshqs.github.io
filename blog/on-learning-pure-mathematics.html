@@ -127,6 +127,23 @@
 
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.querySelector(".nav-toggle");
+    const links = document.querySelector(".nav-links");
+
+    if (toggle) {
+        toggle.addEventListener("click", () => {
+            toggle.classList.toggle("active");
+            links.classList.toggle("active");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                toggle.classList.remove("active");
+                links.classList.remove("active");
+            });
+        });
+    }
 </script>
 
 </body>
