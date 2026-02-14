@@ -175,6 +175,20 @@ a:hover {
 }
 
 /* =========================
+   Active Navigation State
+   ========================= */
+
+.nav-links a[aria-current="page"] {
+    color: #111827;                /* darker, grounded */
+    font-weight: 600;              /* subtle emphasis */
+}
+
+.nav-links a[aria-current="page"]::after {
+    width: 100%;                   /* persistent underline */
+    background-color: #1d4ed8;     /* same accent blue */
+}
+
+/* =========================
    Intro Section
    ========================= */
 
