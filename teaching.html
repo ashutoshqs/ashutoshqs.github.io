@@ -14,6 +14,17 @@
     <link rel="icon" href="favicon.ico">
     <meta name="theme-color" content="#f9fafb">
 
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 </head>
 
 <body>
@@ -37,7 +48,7 @@
             <a href="index.html">About</a>
             <a href="education.html">Education</a>
             <a href="research.html">Research</a>
-            <a href="teaching.html">Teaching</a>
+            <a href="teaching.html" aria-current="page">Teaching</a>
             <a href="awards.html">Awards</a>
             <a href="blog.html">Blog</a>
         </div>
