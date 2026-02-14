@@ -15,10 +15,9 @@ body {
 
 /* Layout container */
 .container {
-    width: 100%;
     max-width: 760px;
     margin: 0 auto;
-    padding: clamp(28px, 5vw, 42px) clamp(16px, 4vw, 22px) 28px;
+    padding: 42px 22px 28px;
 }
 
 /* =========================
@@ -113,7 +112,6 @@ a:hover {
 .nav-links {
     display: flex;
     gap: 26px;
-    flex-wrap: wrap;
 }
 
 .nav-links a {
