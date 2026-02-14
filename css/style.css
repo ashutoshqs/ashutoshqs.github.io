@@ -15,7 +15,7 @@ body {
 .container {
     max-width: 760px;
     margin: 0 auto;
-    padding: 64px 28px 48px;
+    padding: 42px 22px 28px;
 }
 
 /* =========================
@@ -37,7 +37,7 @@ h1 {
 h2 {
     font-size: 1.45em;
     font-weight: 600;
-    margin-top: 48px;
+    margin-top: 32px;
     margin-bottom: 16px;
     letter-spacing: -0.01em;
 }
@@ -71,7 +71,7 @@ a:hover {
    ========================= */
 
 .navbar {
-    margin-bottom: 80px;
+    margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -194,8 +194,8 @@ a:hover {
 
 .content {
     border-top: 1px solid #e5e7eb;
-    padding-top: 40px;
-    margin-top: 56px;
+    padding-top: 26px;
+    margin-top: 26px;
 }
 
 .section-intro {
@@ -213,8 +213,31 @@ a:hover {
     background-color: #ffffff;
     border: 1px solid #e8e8e8;
     border-radius: 12px;
-    padding: 32px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    padding: 24px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.025);
+}
+
+/* =========================
+   CV Button
+   ========================= */
+
+.cv-button {
+    display: inline-block;
+    padding: 9px 20px;
+    border: 1.5px solid #1d4ed8;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+    color: #1d4ed8;
+    background-color: transparent;
+    transition: all 0.25s ease;
+}
+
+.cv-button:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /* =========================
@@ -250,6 +273,27 @@ li {
     color: #9ca3af;
 }
 
+/* Course arrow icon */
+
+.course-link-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 5px;
+    color: #9ca3af;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    stroke-width: 2.4;
+}
+
+.course-link-icon:hover {
+    color: #1d4ed8;
+    transform: translateY(-1px);
+}
+
 /* =========================
    Recent Writing (Homepage)
    ========================= */
@@ -266,13 +310,13 @@ li {
     margin-bottom: 48px;
     padding-bottom: 28px;
     border-bottom: 1px solid #e5e7eb;
-    border-left: 2px solid transparent;
+    border-left: 3px solid transparent;
     padding-left: 14px;
-    transition: border-color 0.2s ease;
+    transition: border-color 0.25s ease;
 }
 
 .writing-item:hover {
-    border-left: 2px solid #1d4ed8;
+    border-left: 3px solid #1d4ed8;
 }
 
 .writing-meta {
