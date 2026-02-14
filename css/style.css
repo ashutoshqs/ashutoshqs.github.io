@@ -580,3 +580,8 @@ footer {
     }
    
 }
+
+/* 404 specific */
+body.error-page .navbar {
+    margin-bottom: 80px;
+}
