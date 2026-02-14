@@ -513,10 +513,10 @@ footer {
 
     .nav-links {
         flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
         opacity: 0;
-        transition: max-height 0.35s ease, opacity 0.25s ease;
+        transform: translateY(-6px);
+        pointer-events: none;
+        transition: opacity 0.2s ease, transform 0.2s ease;
         margin-top: 14px;
         gap: 0;
        
@@ -530,8 +530,9 @@ footer {
     }
 
     .nav-links.active {
-        max-height: 400px;
         opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
         padding: 8px 14px;
     }
 
