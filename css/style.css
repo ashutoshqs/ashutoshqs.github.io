@@ -221,11 +221,11 @@ a:hover {
    ========================= */
 
 .card {
-    background-color: #fcfcfd;
-    border: 1px solid #e6e8eb;
+    background-color: #f5f7fa;
+    border: 1px solid #e2e8f0;
     border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.02);
+    box-shadow: none;
 }
 
 /* =========================
