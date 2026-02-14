@@ -131,8 +131,10 @@
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
-        toggle.classList.remove("active");
-        links.classList.remove("active");
+        link.addEventListener("click", () => {
+            toggle.classList.remove("active");
+            links.classList.remove("active");
+        });
     });
 </script>
 
