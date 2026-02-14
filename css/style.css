@@ -540,4 +540,9 @@ footer {
     h1 {
         font-size: 2em;
     }
+
+   .nav-links a::after {
+        bottom: 0;
+    }
+   
 }
