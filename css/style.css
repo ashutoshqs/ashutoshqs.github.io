@@ -138,13 +138,16 @@ a:hover {
     background-color: #1d4ed8;
 
     transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;   /* expands outward symmetrically */
+    opacity: 0;
+
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.25s ease;
 }
 
-/* Hover */
 .nav-links a:hover::after {
     transform: scaleX(1);
+    opacity: 1;
 }
 
 /* Hamburger */
