@@ -581,67 +581,54 @@ footer {
 }
 
 /* =========================
-   404 Page – Bold Centered Variant
+   404 Page – Refined Centered Variant
    ========================= */
 
-.error-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
 .error-page .container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
-/* Main 404 block */
-
 .error-content {
-    max-width: 520px;
+    margin-bottom: 16px;
 }
 
 .error-content h1 {
-    font-size: 7em;
+    font-size: 6.5em;
     font-weight: 700;
-    letter-spacing: -0.06em;
-    margin-bottom: 32px;
+    letter-spacing: -0.04em;
+    margin-bottom: 18px;
     line-height: 1;
 }
 
+/* Remove decorative underline for 404 */
+.error-content h1::after {
+    display: none;
+}
+
 .error-content p {
-    font-size: 1.05em;
-    margin-bottom: 14px;
+    font-size: 1.06em;
+    margin-bottom: 8px;
     color: #4b5563;
 }
 
 .error-link {
-    margin-top: 36px;
+    margin-top: 20px;
     display: inline-block;
     font-weight: 500;
 }
 
-/* Footer */
-
 .error-footer {
-    margin-top: 80px;
-    font-size: 0.9em;
-    color: #6b7280;
+    margin-top: 60px;
 }
 
-/* Favicon / Mark */
-
 .error-mark {
-    margin-top: 50px;
+    margin-top: 36px;
 }
 
 .error-mark img {
-    width: 70px;
-    height: 70px;
-    opacity: 0.65;
+    width: 60px;
+    height: 60px;
+    opacity: 0.7;
 }
