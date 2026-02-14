@@ -546,3 +546,16 @@ footer {
     }
    
 }
+
+.navbar {
+    background-color: #111827;
+}
+
+.site-title,
+.nav-links a {
+    color: #f9fafb;
+}
+
+.nav-links a::after {
+    background-color: #60a5fa;
+}
