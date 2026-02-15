@@ -10,6 +10,12 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    animation: pageFade 0.35s ease-out;
+}
+
+@keyframes pageFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Layout container */
@@ -41,7 +47,7 @@ h1::after {
     width: 42px;
     height: 2px;
     background-color: #1d4ed8;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
 h2 {
@@ -117,6 +123,7 @@ a:hover {
     position: relative;
     font-weight: 500;
     color: #1f2937;
+    transition: color 0.25s ease;
 }
 
 /* =========================
@@ -125,6 +132,10 @@ a:hover {
 
 .nav-links a {
     position: relative;
+}
+
+.nav-links a:hover {
+    color: #111827;
 }
 
 .nav-links a::after {
@@ -254,6 +265,12 @@ a:hover {
     border-radius: 12px;
     padding: 24px;
     box-shadow: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
 /* =========================
@@ -319,7 +336,7 @@ li {
     align-items: center;
     margin-left: 5px;
     color: #9ca3af;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: transform 0.25s ease, color 0.25s ease;
 }
 
 .arrow-icon {
@@ -330,7 +347,7 @@ li {
 
 .course-link-icon:hover {
     color: #1d4ed8;
-    transform: translateY(-1px);
+    transform: translate(1.5px, -1.5px);
 }
 
 /* =========================
@@ -476,6 +493,12 @@ li {
     fill: #6b7280;
     transition: fill 0.25s ease;
     cursor: pointer;
+    animation: subtlePulse 4s ease-in-out 3;
+}
+
+@keyframes subtlePulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
 }
 
 .mail-icon-container a:hover .mail-icon {
@@ -509,7 +532,7 @@ footer {
 .fade-in {
     opacity: 0;
     transform: translateY(10px);
-    animation: fadeInUp 0.6s ease forwards;
+    animation: fadeInUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
 @keyframes fadeInUp {
@@ -552,6 +575,7 @@ footer {
         background-color: #ffffff;
         border: 1px solid #e5e7eb;
         border-radius: 8px;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     }
 
     .nav-links a {
@@ -595,7 +619,7 @@ footer {
 }
 
 .error-content h1 {
-    font-size: 6.5em;
+    font-size: 6em;
     font-weight: 700;
     letter-spacing: -0.04em;
     margin-bottom: 18px;
@@ -643,4 +667,30 @@ footer {
 .error-mark a:hover {
     transform: translateY(-2px);
     opacity: 0.85;
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: #1d4ed8;
+    z-index: 9999;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 800px;
+    }
+}
+
+::selection {
+    background: #1d4ed8;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
