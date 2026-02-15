@@ -58,6 +58,8 @@
 
 <body>
 
+<div class="progress-bar"></div>
+
 <div class="container">
 
     <!-- NAVIGATION -->
@@ -173,6 +175,14 @@
             });
         });
     }
+
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.body.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / docHeight) * 100;
+        document.querySelector(".progress-bar").style.width = progress + "%";
+    });
+    
 </script>
 
 </body>
