@@ -712,3 +712,7 @@ sub {
     position: relative;
     bottom: -0.2em;
 }
+
+.research-list li {
+    margin-bottom: 6px;
+}
