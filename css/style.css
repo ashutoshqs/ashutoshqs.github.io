@@ -411,30 +411,30 @@ li {
 }
 
 /* =========================
-   Blog Archive
+   Creative Archive
    ========================= */
 
-.blog-entry {
+.creative-entry {
     margin-bottom: 64px;
     padding-bottom: 28px;
     border-bottom: 1px solid #e5e7eb;
 }
 
-.blog-entry:last-child {
+.creative-entry:last-child {
     border-bottom: none;
 }
 
-.blog-entry h2 {
+.creative-entry h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.blog-entry h2 a {
+.creative-entry h2 a {
     text-decoration: none;
     color: #111827;
 }
 
-.blog-entry h2 a:hover {
+.creative-entry h2 a:hover {
     text-decoration: underline;
 }
 
@@ -444,7 +444,7 @@ li {
 }
 
 /* =========================
-   Individual Blog Post
+   Individual Creative Post
    ========================= */
 
 .post-content {
