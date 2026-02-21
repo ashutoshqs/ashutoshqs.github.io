@@ -550,7 +550,7 @@ footer {
    Mobile
    ========================= */
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
 
     .navbar {
         flex-direction: column;
