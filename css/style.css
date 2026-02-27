@@ -389,15 +389,18 @@ li {
 .writing-item h3 {
     margin: 0 0 10px 0;
     font-size: 1.28em;
+    font-weight: 500;
 }
 
 .writing-item h3 a {
     color: #111827;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .writing-item h3 a:hover {
     color: #1d4ed8;
+    font-weight: 500;
 }
 
 .writing-item p {
