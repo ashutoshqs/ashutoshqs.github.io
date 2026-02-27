@@ -92,6 +92,13 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: rgba(249, 250, 251, 0.85);
+    backdrop-filter: blur(6px);
 }
 
 .nav-header {
