@@ -602,7 +602,7 @@ footer {
     }
 
    .nav-links a::after {
-        bottom: -4px;
+        bottom: 4px;
     }
    
 }
@@ -660,7 +660,7 @@ footer {
     }
 
    .nav-links a::after {
-        bottom: -4px;
+        bottom: 4px;
     }
    
 }
