@@ -22,7 +22,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 420px 22px 28px;
+    padding: 0 22px 28px;
 }
 
 /* =========================
@@ -91,7 +91,8 @@ a:hover {
     margin-bottom: 48px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    min-height: 72px;
 
     position: sticky;
     top: 0;
@@ -108,7 +109,7 @@ a:hover {
 
 .site-title {
     font-weight: 600;
-    font-size: 1.7em;
+    font-size: 1.8em;
     color: #111827;
     text-decoration: none;
     line-height: 1;
