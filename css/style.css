@@ -612,7 +612,7 @@ footer {
    Tablet
    ========================= */
 
-@media (min-width: 768px) and (max-width: 880px) {
+@media (min-width: 769px) and (max-width: 880px) {
 
     .navbar {
         flex-direction: column;
