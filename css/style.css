@@ -632,6 +632,9 @@ footer {
     .nav-header {
         width: 100%;
         justify-content: space-between;
+        min-height: 72px;
+        display: flex;
+        align-items: center;
     }
 
     .nav-toggle {
