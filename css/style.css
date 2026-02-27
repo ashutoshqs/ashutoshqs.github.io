@@ -130,10 +130,6 @@ a:hover {
    Navigation Underline (Refined)
    ========================= */
 
-.nav-links a {
-    position: relative;
-}
-
 .nav-links a:hover {
     color: #111827;
 }
@@ -669,6 +665,13 @@ footer {
    
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 /* =========================
    404 Page – Refined Centered Variant
    ========================= */
@@ -746,7 +749,7 @@ footer {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 800px;
+        max-width: 880px;
     }
 }
 
