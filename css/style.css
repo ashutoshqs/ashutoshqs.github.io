@@ -22,7 +22,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 28px 22px 28px;
+    padding: 420px 22px 28px;
 }
 
 /* =========================
@@ -99,13 +99,6 @@ a:hover {
 
     background-color: rgba(249, 250, 251, 0.85);
     backdrop-filter: blur(6px);
-
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(249, 250, 251, 0.95);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .nav-header {
