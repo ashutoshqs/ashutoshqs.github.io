@@ -679,13 +679,6 @@ footer {
    
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
-}
-
 /* =========================
    404 Page – Refined Centered Variant
    ========================= */
