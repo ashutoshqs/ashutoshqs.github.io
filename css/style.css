@@ -794,3 +794,51 @@ sub {
 .research-list li {
     margin-bottom: 6px;
 }
+
+/* =========================
+   Back To Top Button
+   ========================= */
+
+#backToTop {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    border: 1px solid #e5e7eb;
+
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(6px);
+
+    color: #1d4ed8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(20px);   /* ← starts off-screen */
+
+    transition: opacity 0.3s ease,
+                transform 0.3s ease,
+                background-color 0.25s ease;
+
+    z-index: 999;
+}
+
+#backToTop:hover {
+    background-color: #1d4ed8;
+    color: #ffffff;
+}
+
+#backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);   /* ← slides in */
+}
