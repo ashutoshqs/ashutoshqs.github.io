@@ -90,7 +90,9 @@ a:hover {
 .navbar {
     margin-bottom: 48px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    min-height: 72px;
 
     position: sticky;
     top: 0;
@@ -103,8 +105,6 @@ a:hover {
 .nav-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    min-height: 72px;
 }
 
 .site-title {
@@ -561,16 +561,12 @@ footer {
 
     .navbar {
         flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
+        align-items: center;
     }
 
     .nav-header {
         width: 100%;
         justify-content: space-between;
-        min-height: 72px;
-        display: flex;
-        align-items: center;
     }
 
     .nav-toggle {
@@ -628,15 +624,11 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: stretch;
-        justify-content: flex-start;
     }
 
     .nav-header {
         width: 100%;
         justify-content: space-between;
-        min-height: 72px;
-        display: flex;
-        align-items: center;
     }
 
     .nav-toggle {
