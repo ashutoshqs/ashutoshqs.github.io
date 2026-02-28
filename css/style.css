@@ -92,6 +92,7 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 72px;
 
     position: sticky;
     top: 0;
@@ -99,13 +100,12 @@ a:hover {
 
     background-color: rgba(249, 250, 251, 0.85);
     backdrop-filter: blur(6px);
-    padding: 0 22px;
 }
 
 .nav-header {
     display: flex;
     align-items: center;
-    min-height: 72px;
+    height: 100%;
 }
 
 .site-title {
@@ -563,12 +563,13 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: stretch;
+        min-height: 72px;
     }
 
     .nav-header {
         width: 100%;
         justify-content: space-between;
-        min-height: 72px;
+        height: 100%;
         display: flex;
         align-items: center;
     }
@@ -628,12 +629,13 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: stretch;
+        min-height: 72px;
     }
 
     .nav-header {
         width: 100%;
         justify-content: space-between;
-        min-height: 72px;
+        height: 100%;
         display: flex;
         align-items: center;
     }
