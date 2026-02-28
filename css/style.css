@@ -90,6 +90,7 @@ a:hover {
 .navbar {
     margin-bottom: 48px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     position: sticky;
@@ -103,7 +104,6 @@ a:hover {
 .nav-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     min-height: 72px;
 }
 
@@ -562,7 +562,6 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: stretch;
-        justify-content: flex-start;
     }
 
     .nav-header {
@@ -628,7 +627,6 @@ footer {
     .navbar {
         flex-direction: column;
         align-items: stretch;
-        justify-content: flex-start;
     }
 
     .nav-header {
