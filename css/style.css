@@ -622,6 +622,7 @@ footer {
    Tablet
    ========================= */
 
+/*
 @media (min-width: 769px) and (max-width: 880px) {
 
     .navbar {
@@ -678,6 +679,8 @@ footer {
     }
    
 }
+
+*/
 
 /* =========================
    404 Page – Refined Centered Variant
@@ -756,7 +759,7 @@ footer {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 880px;
+        max-width: 960px;
     }
 }
 
