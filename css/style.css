@@ -90,7 +90,7 @@ a:hover {
 .navbar {
     margin-bottom: 48px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
 
     position: sticky;
     top: 0;
