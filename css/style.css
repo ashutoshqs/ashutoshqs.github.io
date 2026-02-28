@@ -835,3 +835,8 @@ sub {
     visibility: visible;
     transform: translateX(0);   /* ← slides in */
 }
+
+#backToTop svg {
+    width: 24px;
+    height: 24px;
+}
