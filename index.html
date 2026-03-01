@@ -26,7 +26,20 @@
     <meta name="twitter:image" content="https://ashutoshqs.github.io/assets/og-home.png">
 
     <meta name="author" content="Ashutosh Sharma">
-    
+
+<script>
+(function() {
+    const stored = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (stored === "dark" || (!stored && prefersDark)) {
+        document.documentElement.classList.add("dark");
+    }
+})();
+</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -59,9 +72,6 @@
   ]
 }
 </script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 </head>
 
@@ -209,6 +219,24 @@
 
 </div>
 
+<button id="themeToggle" aria-label="Toggle dark mode">
+    <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="4"></line>
+        <line x1="12" y1="20" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"></line>
+        <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="4" y2="12"></line>
+        <line x1="20" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"></line>
+        <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"></line>
+    </svg>
+
+    <svg id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 3a9 9 0 1 0 9 9 7 7 0 1 1-9-9z"></path>
+    </svg>
+</button>
+
 <button id="backToTop" aria-label="Back to top">
   <svg viewBox="0 0 24 24" fill="none"
        stroke="currentColor" stroke-width="2.4"
@@ -222,17 +250,17 @@
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    const toggle = document.querySelector(".nav-toggle");
+    const navToggle = document.querySelector(".nav-toggle");
     const links = document.querySelector(".nav-links");
 
-    toggle.addEventListener("click", () => {
-        toggle.classList.toggle("active");
+    navToggle.addEventListener("click", () => {
+        navToggle.classList.toggle("active");
         links.classList.toggle("active");
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
-            toggle.classList.remove("active");
+            navToggle.classList.remove("active");
             links.classList.remove("active");
         });
     });
@@ -255,6 +283,25 @@
       behavior: 'smooth'
     });
   });
+</script>
+
+<script>
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+
+    toggle.style.transform = "rotate(180deg)";
+    setTimeout(() => {
+        toggle.style.transform = "rotate(0deg)";
+    }, 400);
+
+    if (document.documentElement.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
+});
 </script>
 
 </body>
