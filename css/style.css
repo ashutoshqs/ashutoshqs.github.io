@@ -900,3 +900,67 @@ sub {
     width: 24px;
     height: 24px;
 }
+
+/* Dark Mode Toggle */
+
+#themeToggle {
+    position: fixed;
+    bottom: 28px;
+    left: calc((100vw - 800px) / 2 + 22px);
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+    border: 1px solid var(--border);
+
+    background-color: var(--button-bg);
+    backdrop-filter: blur(6px);
+
+    color: var(--accent);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: background-color 0.25s ease,
+                transform 0.4s ease,
+                color 0.25s ease;
+
+    z-index: 998;
+}
+
+#themeToggle:hover {
+    background-color: var(--accent);
+    color: var(--card-bg);
+}
+
+#themeToggle svg {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transition: opacity 0.3s ease, transform 0.4s ease;
+}
+
+/* Default state (light mode) */
+#sunIcon {
+    opacity: 0;
+    transform: rotate(-90deg);
+}
+
+#moonIcon {
+    opacity: 1;
+}
+
+/* When dark mode active */
+html.dark #sunIcon {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+html.dark #moonIcon {
+    opacity: 0;
+    transform: rotate(90deg);
+}
