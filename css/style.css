@@ -37,6 +37,24 @@
     }
 }
 
+/* Manual dark mode override */
+html.dark {
+    --bg: #0f172a;
+    --text: #e5e7eb;
+    --heading: #f3f4f6;
+
+    --muted-1: #cbd5e1;
+    --muted-2: #94a3b8;
+    --muted-3: #64748b;
+
+    --border: #334155;
+    --card-bg: #1e293b;
+    --accent: #60a5fa;
+
+    --navbar-bg: rgba(15, 23, 42, 0.85);
+    --button-bg: rgba(30, 41, 59, 0.9);
+}
+
 /* =========================
    Base & Typography
    ========================= */
