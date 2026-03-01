@@ -280,7 +280,7 @@ a:hover {
    ========================= */
 
 .content {
-    border-top: 1px solid #var(--border);
+    border-top: 1px solid var(--border);
     padding-top: 32px;
     margin-top: 32px;
 }
@@ -360,7 +360,7 @@ li {
 .education-list li {
     margin-bottom: 32px;
     padding-left: 16px;
-    border-left: 2px solid #var(--border);
+    border-left: 2px solid var(--border);
 }
 
 .last-updated {
@@ -406,7 +406,7 @@ li {
 .writing-item {
     margin-bottom: 48px;
     padding-bottom: 28px;
-    border-bottom: 1px solid #var(--border);
+    border-bottom: 1px solid var(--border);
     border-left: 3px solid transparent;
     padding-left: 14px;
     transition: border-color 0.25s ease;
@@ -457,7 +457,7 @@ li {
 .creative-entry {
     margin-bottom: 64px;
     padding-bottom: 28px;
-    border-bottom: 1px solid #var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 .creative-entry:last-child {
@@ -518,7 +518,7 @@ li {
 .post-content hr {
     margin: 64px 0 32px;
     border: none;
-    border-top: 1px solid #var(--border);
+    border-top: 1px solid var(--border);
     opacity: 0.6;
 }
 
@@ -563,7 +563,7 @@ li {
 footer {
     margin-top: 80px;
     padding-top: 32px;
-    border-top: 1px solid #var(--border);
+    border-top: 1px solid var(--border);
     font-size: 0.9em;
     color: var(--muted-2);
     text-align: center;
@@ -620,7 +620,7 @@ footer {
         gap: 0;
        
         background-color: #ffffff;
-        border: 1px solid #var(--border);
+        border: 1px solid var(--border);
         border-radius: 8px;
         box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     }
@@ -686,7 +686,7 @@ footer {
         gap: 0;
        
         background-color: #ffffff;
-        border: 1px solid #var(--border);
+        border: 1px solid var(--border);
         border-radius: 8px;
         box-shadow: 0 6px 16px rgba(0,0,0,0.05);
     }
@@ -837,7 +837,7 @@ sub {
     height: 44px;
 
     border-radius: 50%;
-    border: 1px solid #var(--border);
+    border: 1px solid var(--border);
 
     background-color: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(6px);
