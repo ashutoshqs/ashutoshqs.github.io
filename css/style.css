@@ -906,7 +906,7 @@ sub {
 #themeToggle {
     position: fixed;
     bottom: 28px;
-    left: calc((100vw - 800px) / 2 + 22px);
+    left: max(22px, calc((100vw - 800px) / 2 + 22px));
 
     width: 42px;
     height: 42px;
