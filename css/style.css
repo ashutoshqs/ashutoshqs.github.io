@@ -11,8 +11,11 @@
     --muted-3: #9ca3af;  /* subtle / meta */
 
     --border: #e5e7eb;
-    --card-bg: #f8fafc;
+    --card-bg: #ffffff;
     --accent: #1d4ed8;
+
+    --navbar-bg: rgba(249, 250, 251, 0.85);
+    --button-bg: rgba(255, 255, 255, 0.9);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,6 +31,9 @@
         --border: #334155;
         --card-bg: #1e293b;
         --accent: #60a5fa;
+
+        --navbar-bg: rgba(15, 23, 42, 0.85);
+        --button-bg: rgba(30, 41, 59, 0.9);
     }
 }
 
@@ -130,7 +136,7 @@ a:hover {
     top: 0;
     z-index: 1000;
 
-    background-color: rgba(249, 250, 251, 0.85);
+    background-color: var(--navbar-bg);
     backdrop-filter: blur(6px);
 }
 
@@ -143,7 +149,7 @@ a:hover {
 .site-title {
     font-weight: 600;
     font-size: 1.8em;
-    color: #111827;
+    color: var(--heading);
     text-decoration: none;
     line-height: 1;
     letter-spacing: -0.01em;
@@ -163,7 +169,7 @@ a:hover {
 .nav-links a {
     position: relative;
     font-weight: 500;
-    color: #1f2937;
+    color: var(--heading);
     transition: color 0.25s ease;
 }
 
@@ -172,7 +178,7 @@ a:hover {
    ========================= */
 
 .nav-links a:hover {
-    color: #111827;
+    color: var(--heading);
 }
 
 .nav-links a::after {
@@ -240,7 +246,7 @@ a:hover {
    ========================= */
 
 .nav-links a[aria-current="page"] {
-    color: #111827;                /* darker, grounded */
+    color: var(--heading);                /* darker, grounded */
     font-weight: 600;              /* subtle emphasis */
 }
 
@@ -298,7 +304,7 @@ a:hover {
 
 .card {
     background-color: var(--card-bg);
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border);
     border-radius: 12px;
     padding: 24px;
     box-shadow: none;
@@ -333,7 +339,7 @@ a:hover {
 
 .cv-button:hover {
     background-color: var(--accent);
-    color: #ffffff;
+    color: var(--card-bg);
     text-decoration: none;
 }
 
@@ -430,7 +436,7 @@ li {
 }
 
 .writing-item h3 a {
-    color: #111827;
+    color: var(--heading);
     text-decoration: none;
     font-weight: 500;
 }
@@ -471,7 +477,7 @@ li {
 
 .creative-entry h2 a {
     text-decoration: none;
-    color: #111827;
+    color: var(--heading);
 }
 
 .creative-entry h2 a:hover {
@@ -619,7 +625,7 @@ footer {
         margin-top: 14px;
         gap: 0;
        
-        background-color: #ffffff;
+        background-color: var(--card-bg);
         border: 1px solid var(--border);
         border-radius: 8px;
         box-shadow: 0 6px 16px rgba(0,0,0,0.05);
@@ -685,7 +691,7 @@ footer {
         margin-top: 14px;
         gap: 0;
        
-        background-color: #ffffff;
+        background-color: var(--card-bg);
         border: 1px solid var(--border);
         border-radius: 8px;
         box-shadow: 0 6px 16px rgba(0,0,0,0.05);
@@ -735,7 +741,7 @@ footer {
     letter-spacing: -0.04em;
     margin-bottom: 18px;
     line-height: 1;
-    color: #1f2937;
+    color: var(--heading);
     text-rendering: optimizeLegibility;
 }
 
@@ -798,7 +804,7 @@ footer {
 
 ::selection {
     background: var(--accent);
-    color: #ffffff;
+    color: var(--card-bg);
 }
 
 img {
@@ -839,7 +845,7 @@ sub {
     border-radius: 50%;
     border: 1px solid var(--border);
 
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--button-bg);
     backdrop-filter: blur(6px);
 
     color: var(--accent);
@@ -863,7 +869,7 @@ sub {
 
 #backToTop:hover {
     background-color: var(--accent);
-    color: #ffffff;
+    color: var(--card-bg);
 }
 
 #backToTop.show {
