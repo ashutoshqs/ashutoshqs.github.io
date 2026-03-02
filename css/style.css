@@ -19,38 +19,38 @@
 }
 
 .dark {
-    --bg: #0f172a;
-    --text: #e5e7eb;
-    --heading: #f3f4f6;
+    --bg: #141414;             /* neutral deep charcoal */
+    --text: #e6e3df;           /* slightly warm white */
+    --heading: #f2f0ec;
 
-    --muted-1: #cbd5e1;
-    --muted-2: #94a3b8;
-    --muted-3: #64748b;
+    --muted-1: #c8c2bb;
+    --muted-2: #a79f96;
+    --muted-3: #7f776f;
 
-    --border: #334155;
-    --card-bg: #1e293b;
-    --accent: #60a5fa;
+    --border: #2a2623;         /* warm dark grey */
+    --card-bg: #1c1917;        /* soft warm charcoal */
+    --accent: #7aa2f7;         /* softened blue (less electric) */
 
-    --navbar-bg: rgba(15, 23, 42, 0.85);
-    --button-bg: rgba(30, 41, 59, 0.9);
+    --navbar-bg: rgba(28, 25, 23, 0.85);
+    --button-bg: rgba(40, 36, 33, 0.9);
 }
 
 /* Manual dark mode override */
 html.dark {
-    --bg: #0f172a;
-    --text: #e5e7eb;
-    --heading: #f3f4f6;
+    --bg: #141414;             /* neutral deep charcoal */
+    --text: #e6e3df;           /* slightly warm white */
+    --heading: #f2f0ec;
 
-    --muted-1: #cbd5e1;
-    --muted-2: #94a3b8;
-    --muted-3: #64748b;
+    --muted-1: #c8c2bb;
+    --muted-2: #a79f96;
+    --muted-3: #7f776f;
 
-    --border: #334155;
-    --card-bg: #1e293b;
-    --accent: #60a5fa;
+    --border: #2a2623;         /* warm dark grey */
+    --card-bg: #1c1917;        /* soft warm charcoal */
+    --accent: #7aa2f7;         /* softened blue (less electric) */
 
-    --navbar-bg: rgba(15, 23, 42, 0.85);
-    --button-bg: rgba(30, 41, 59, 0.9);
+    --navbar-bg: rgba(28, 25, 23, 0.85);
+    --button-bg: rgba(40, 36, 33, 0.9);
 }
 
 /* =========================
