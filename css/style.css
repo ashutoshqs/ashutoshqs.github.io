@@ -19,38 +19,40 @@
 }
 
 .dark {
-    --bg: #121212;                 /* deep neutral charcoal */
-    --text: #e8e8e8;               /* high contrast clean light */
-    --heading: #f5f5f5;
+    --bg: #0f0f10;                 /* slightly darker base */
+    --text: #f0f0f0;               /* brighter primary text */
+    --heading: #ffffff;            /* crisp headings */
 
-    --muted-1: #c2c2c2;
-    --muted-2: #9a9a9a;
-    --muted-3: #6f6f6f;
+    --muted-1: #d0d0d0;            /* lifted muted */
+    --muted-2: #a8a8a8;
+    --muted-3: #7a7a7a;
 
-    --border: #2a2a2a;             /* neutral, not brown */
-    --card-bg: #1a1a1a;            /* slightly elevated charcoal */
-    --accent: #b23a3a;             /* deep academic red */
-    
-    --navbar-bg: rgba(18, 18, 18, 0.85);  /* fixed clarity */
-    --button-bg: rgba(26, 26, 26, 0.9);
+    --border: #303030;             /* stronger separation */
+    --card-bg: #181818;            /* clearer layer distinction */
+
+    --accent: #b23a3a;             /* academic red */
+
+    --navbar-bg: rgba(15, 15, 16, 0.88);
+    --button-bg: rgba(24, 24, 24, 0.92);
 }
 
 /* Manual dark mode override */
 html.dark {
-    --bg: #121212;                 /* deep neutral charcoal */
-    --text: #e8e8e8;               /* high contrast clean light */
-    --heading: #f5f5f5;
+     --bg: #0f0f10;                 /* slightly darker base */
+    --text: #f0f0f0;               /* brighter primary text */
+    --heading: #ffffff;            /* crisp headings */
 
-    --muted-1: #c2c2c2;
-    --muted-2: #9a9a9a;
-    --muted-3: #6f6f6f;
+    --muted-1: #d0d0d0;            /* lifted muted */
+    --muted-2: #a8a8a8;
+    --muted-3: #7a7a7a;
 
-    --border: #2a2a2a;             /* neutral, not brown */
-    --card-bg: #1a1a1a;            /* slightly elevated charcoal */
-    --accent: #b23a3a;             /* deep academic red */
-    
-    --navbar-bg: rgba(18, 18, 18, 0.85);  /* fixed clarity */
-    --button-bg: rgba(26, 26, 26, 0.9);
+    --border: #303030;             /* stronger separation */
+    --card-bg: #181818;            /* clearer layer distinction */
+
+    --accent: #b23a3a;             /* academic red */
+
+    --navbar-bg: rgba(15, 15, 16, 0.88);
+    --button-bg: rgba(24, 24, 24, 0.92);
 }
 
 .dark a:hover {
