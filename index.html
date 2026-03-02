@@ -321,6 +321,7 @@ initTheme();
 // Listen for system theme changes
 mediaQuery.addEventListener("change", e => {
     applyTheme(e.matches);
+    sessionStorage.removeItem("theme");
 });
 
 // Manual toggle
