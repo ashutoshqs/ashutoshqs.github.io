@@ -114,7 +114,8 @@
 
             <img src="assets/profile.jpg" 
                  alt="Profile photo of Ashutosh Sharma" 
-                 class="profile-photo">
+                 class="profile-photo"
+                 loading="eager">
 
             <h1>Ashutosh Sharma</h1>
 
@@ -292,9 +293,15 @@
 const themeToggle = document.getElementById("themeToggle");
 const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
+function updateThemeColor(isDark) {
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    metaTheme.setAttribute("content", isDark ? "#0f172a" : "#f9fafb");
+}
+
 function applyTheme(isDark) {
     document.documentElement.classList.toggle("dark", isDark);
     themeToggle.setAttribute("aria-pressed", isDark);
+    updateThemeColor(isDark);
 }
 
 function initTheme() {
@@ -311,13 +318,13 @@ function initTheme() {
 
 initTheme();
 
-// 🔁 Listen for system theme changes (ALWAYS)
+// Listen for system theme changes
 mediaQuery.addEventListener("change", e => {
     applyTheme(e.matches);
-    localStorage.removeItem("theme"); // reset manual override
+    localStorage.removeItem("theme");
 });
 
-// 🔘 Manual toggle
+// Manual toggle
 themeToggle.addEventListener("click", () => {
     const isDark = !document.documentElement.classList.contains("dark");
 
