@@ -889,7 +889,7 @@ sub {
 
 #backToTop:hover {
     background-color: var(--accent);
-    color: var(--card-bg);
+    color: #ffffff;
 }
 
 #backToTop.show {
@@ -936,7 +936,7 @@ sub {
 
 #themeToggle:hover {
     background-color: var(--accent);
-    color: var(--card-bg);
+    color: #ffffff;
 }
 
 #themeToggle svg {
