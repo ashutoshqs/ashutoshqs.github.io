@@ -19,38 +19,42 @@
 }
 
 .dark {
-    --bg: #141414;             /* neutral deep charcoal */
-    --text: #e6e3df;           /* slightly warm white */
-    --heading: #f2f0ec;
+    --bg: #121212;                 /* deep neutral charcoal */
+    --text: #e8e8e8;               /* high contrast clean light */
+    --heading: #f5f5f5;
 
-    --muted-1: #c8c2bb;
-    --muted-2: #a79f96;
-    --muted-3: #7f776f;
+    --muted-1: #c2c2c2;
+    --muted-2: #9a9a9a;
+    --muted-3: #6f6f6f;
 
-    --border: #2a2623;         /* warm dark grey */
-    --card-bg: #1c1917;        /* soft warm charcoal */
-    --accent: #7aa2f7;         /* softened blue (less electric) */
-
-    --navbar-bg: rgba(28, 25, 23, 0.85);
-    --button-bg: rgba(40, 36, 33, 0.9);
+    --border: #2a2a2a;             /* neutral, not brown */
+    --card-bg: #1a1a1a;            /* slightly elevated charcoal */
+    --accent: #b23a3a;             /* deep academic red */
+    
+    --navbar-bg: rgba(18, 18, 18, 0.85);  /* fixed clarity */
+    --button-bg: rgba(26, 26, 26, 0.9);
 }
 
 /* Manual dark mode override */
 html.dark {
-    --bg: #141414;             /* neutral deep charcoal */
-    --text: #e6e3df;           /* slightly warm white */
-    --heading: #f2f0ec;
+    --bg: #121212;                 /* deep neutral charcoal */
+    --text: #e8e8e8;               /* high contrast clean light */
+    --heading: #f5f5f5;
 
-    --muted-1: #c8c2bb;
-    --muted-2: #a79f96;
-    --muted-3: #7f776f;
+    --muted-1: #c2c2c2;
+    --muted-2: #9a9a9a;
+    --muted-3: #6f6f6f;
 
-    --border: #2a2623;         /* warm dark grey */
-    --card-bg: #1c1917;        /* soft warm charcoal */
-    --accent: #7aa2f7;         /* softened blue (less electric) */
+    --border: #2a2a2a;             /* neutral, not brown */
+    --card-bg: #1a1a1a;            /* slightly elevated charcoal */
+    --accent: #b23a3a;             /* deep academic red */
+    
+    --navbar-bg: rgba(18, 18, 18, 0.85);  /* fixed clarity */
+    --button-bg: rgba(26, 26, 26, 0.9);
+}
 
-    --navbar-bg: rgba(28, 25, 23, 0.85);
-    --button-bg: rgba(40, 36, 33, 0.9);
+.dark a:hover {
+    filter: brightness(1.15);
 }
 
 /* =========================
