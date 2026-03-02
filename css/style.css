@@ -19,40 +19,40 @@
 }
 
 .dark {
-    --bg: #0f0f10;                 /* slightly darker base */
-    --text: #f0f0f0;               /* brighter primary text */
-    --heading: #ffffff;            /* crisp headings */
+    --bg: #0f1115;                 /* deep neutral charcoal */
+    --text: #f1f3f5;               /* strong readable light */
+    --heading: #ffffff;
 
-    --muted-1: #d0d0d0;            /* lifted muted */
-    --muted-2: #a8a8a8;
-    --muted-3: #7a7a7a;
+    --muted-1: #d1d5db;
+    --muted-2: #a1a6ad;
+    --muted-3: #6b7280;
 
-    --border: #303030;             /* stronger separation */
-    --card-bg: #181818;            /* clearer layer distinction */
+    --border: #2b2f36;
+    --card-bg: #171a1f;
 
-    --accent: #b23a3a;             /* academic red */
+    --accent: #4f7bd9;             /* deep sapphire blue */
 
-    --navbar-bg: rgba(15, 15, 16, 0.88);
-    --button-bg: rgba(24, 24, 24, 0.92);
+    --navbar-bg: rgba(15, 17, 21, 0.88);
+    --button-bg: rgba(23, 26, 31, 0.92);
 }
 
 /* Manual dark mode override */
 html.dark {
-     --bg: #0f0f10;                 /* slightly darker base */
-    --text: #f0f0f0;               /* brighter primary text */
-    --heading: #ffffff;            /* crisp headings */
+     --bg: #0f1115;                 /* deep neutral charcoal */
+    --text: #f1f3f5;               /* strong readable light */
+    --heading: #ffffff;
 
-    --muted-1: #d0d0d0;            /* lifted muted */
-    --muted-2: #a8a8a8;
-    --muted-3: #7a7a7a;
+    --muted-1: #d1d5db;
+    --muted-2: #a1a6ad;
+    --muted-3: #6b7280;
 
-    --border: #303030;             /* stronger separation */
-    --card-bg: #181818;            /* clearer layer distinction */
+    --border: #2b2f36;
+    --card-bg: #171a1f;
 
-    --accent: #b23a3a;             /* academic red */
+    --accent: #4f7bd9;             /* deep sapphire blue */
 
-    --navbar-bg: rgba(15, 15, 16, 0.88);
-    --button-bg: rgba(24, 24, 24, 0.92);
+    --navbar-bg: rgba(15, 17, 21, 0.88);
+    --button-bg: rgba(23, 26, 31, 0.92);
 }
 
 .dark a:hover {
