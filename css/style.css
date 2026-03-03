@@ -643,6 +643,7 @@ footer {
         overflow: hidden;
         opacity: 0;
         transition: max-height 0.35s ease, opacity 0.25s ease;
+        padding: 8px 14px;
         gap: 0;
        
         background-color: var(--card-bg);
@@ -656,7 +657,6 @@ footer {
     }
 
     .nav-links.active {
-        padding: 8px 14px;
         margin-top: 14px;
         max-height: 400px;
         opacity: 1;
