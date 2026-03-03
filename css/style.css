@@ -639,6 +639,7 @@ footer {
 
     .nav-links {
         flex-direction: column;
+        padding: 8px 14px;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
@@ -656,7 +657,6 @@ footer {
     }
 
     .nav-links.active {
-        padding: 8px 14px;
         max-height: 400px;
         opacity: 1;
     }
