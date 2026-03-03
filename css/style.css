@@ -642,7 +642,6 @@ footer {
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        padding: 8px 14px;
         transition: max-height 0.35s ease, opacity 0.25s ease;
         gap: 0;
        
@@ -657,6 +656,7 @@ footer {
     }
 
     .nav-links.active {
+        padding: 8px 14px;
         max-height: 400px;
         opacity: 1;
     }
