@@ -639,11 +639,18 @@ footer {
 
     .nav-links {
         flex-direction: column;
-        max-height: 0;
+        max-height: none;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.35s ease, opacity 0.25s ease;
+        transform: translateY(-8px) scaleY(0.95);
+        transform-origin: top;
+        
+        transition:
+            transform 0.28s ease,
+            opacity 0.2s ease;
         gap: 0;
+
+        will-change: transform, opacity;
        
         background-color: var(--card-bg);
         border: 1px solid var(--border);
@@ -658,8 +665,10 @@ footer {
     .nav-links.active {
         padding: 8px 14px;
         margin-top: 14px;
-        max-height: 400px;
+
         opacity: 1;
+        transform: translateY(0) scaleY(1);
+
     }
 
     .profile-photo {
