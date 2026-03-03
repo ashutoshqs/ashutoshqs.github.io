@@ -667,7 +667,11 @@ footer {
         height: auto;
         aspect-ratio: 1 / 1;
     }
-    
+
+    h1 {
+        font-size: 2.2em;
+    }
+
    .nav-links a::after {
         bottom: 4px;
     }
