@@ -12,10 +12,11 @@
 
     --border: #e5e7eb;
     --card-bg: #ffffff;
-    --accent: #1d4ed8;
+    --accent: #1e40af;
 
     --navbar-bg: rgba(249, 250, 251, 0.85);
     --button-bg: rgba(255, 255, 255, 0.9);
+    --shadow-soft: 0 6px 16px rgba(0,0,0,0.06);;
 }
 
 .dark {
@@ -34,11 +35,12 @@
 
     --navbar-bg: rgba(15, 17, 21, 0.88);
     --button-bg: rgba(23, 26, 31, 0.92);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.5), 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 /* Manual dark mode override */
 html.dark {
-     --bg: #0f1115;                 /* deep neutral charcoal */
+    --bg: #0f1115;                 /* deep neutral charcoal */
     --text: #f1f3f5;               /* strong readable light */
     --heading: #ffffff;
 
@@ -53,6 +55,7 @@ html.dark {
 
     --navbar-bg: rgba(15, 17, 21, 0.88);
     --button-bg: rgba(23, 26, 31, 0.92);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.5), 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .dark a:hover {
@@ -335,7 +338,7 @@ a:hover {
 
 .card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    box-shadow: var(--shadow-soft);
 }
 
 .card p {
@@ -649,7 +652,7 @@ footer {
         background-color: var(--card-bg);
         border: 1px solid var(--border);
         border-radius: 8px;
-        box-shadow: 0 6px 16px rgba(0,0,0,0.05);
+        box-shadow: var(--shadow-soft);
     }
 
     .nav-links a {
