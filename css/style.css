@@ -81,7 +81,7 @@ body {
 
 /* Layout container */
 .container {
-    max-width: 800px;
+    max-width: 832px;
     margin: 0 auto;
     padding: 0 22px 28px;
 }
@@ -683,7 +683,7 @@ footer {
    ========================= */
 
 
-@media (min-width: 769px) and (max-width: 880px) {
+@media (min-width: 513px) and (max-width: 928px) {
 
     .navbar {
         flex-direction: column;
@@ -814,7 +814,13 @@ footer {
     z-index: 9999;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
+    .container {
+        max-width: 896px;
+    }
+}
+
+@media (min-width: 1537px) {
     .container {
         max-width: 960px;
     }
