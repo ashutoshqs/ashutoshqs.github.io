@@ -644,7 +644,6 @@ footer {
         opacity: 0;
         padding: 8px 14px;
         transition: max-height 0.35s ease, opacity 0.25s ease;
-        margin-top: 14px;
         gap: 0;
        
         background-color: var(--card-bg);
