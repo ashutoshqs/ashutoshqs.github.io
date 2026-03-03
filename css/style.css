@@ -639,11 +639,11 @@ footer {
 
     .nav-links {
         flex-direction: column;
-        padding: 8px 14px;
+        padding: 0 14px;
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.35s ease, opacity 0.25s ease;
+        transition: max-height 0.35s ease, opacity 0.25s ease, padding 0.35s ease;
         gap: 0;
        
         background-color: var(--card-bg);
@@ -659,6 +659,7 @@ footer {
     .nav-links.active {
         max-height: 400px;
         opacity: 1;
+        padding: 8px 14px;
     }
 
     .profile-photo {
