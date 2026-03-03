@@ -657,22 +657,17 @@ footer {
 
     .nav-links.active {
         padding: 8px 14px;
-        margin-top: 14px;
         max-height: 400px;
         opacity: 1;
     }
 
     .profile-photo {
         width: 70%;
-        max-width: 260px;
+        max-width: 320px;
         height: auto;
         aspect-ratio: 1 / 1;
     }
-
-    h1 {
-        font-size: 2em;
-    }
-
+    
    .nav-links a::after {
         bottom: 4px;
     }
