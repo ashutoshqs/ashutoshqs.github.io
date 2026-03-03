@@ -28,7 +28,7 @@
 
 <script>
 (function() {
-    const stored = localStorage.getItem("theme");
+    const stored = sessionStorage.getItem("theme");
 
     if (stored === "dark") {
         document.documentElement.classList.add("dark");
@@ -267,7 +267,7 @@ function applyTheme(isDark) {
 }
 
 function initTheme() {
-    const stored = localStorage.getItem("theme");
+    const stored = sessionStorage.getItem("theme");
 
     if (stored === "dark") {
         applyTheme(true);
@@ -283,7 +283,7 @@ initTheme();
 // Listen for system theme changes
 mediaQuery.addEventListener("change", e => {
     applyTheme(e.matches);
-    localStorage.removeItem("theme");
+    sessionStorage.removeItem("theme");
 });
 
 // Manual toggle
@@ -291,7 +291,7 @@ themeToggle.addEventListener("click", () => {
     const isDark = !document.documentElement.classList.contains("dark");
 
     applyTheme(isDark);
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+    sessionStorage.setItem("theme", isDark ? "dark" : "light");
 
     themeToggle.style.transform = "rotate(180deg)";
     setTimeout(() => {
